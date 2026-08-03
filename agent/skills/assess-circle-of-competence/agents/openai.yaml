@@ -1,0 +1,4 @@
+interface:
+  display_name: "Assess Circle of Competence"
+  short_description: "Test whether a business question is honestly understandable"
+  default_prompt: "Use $assess-circle-of-competence to decide whether this business question is inside an honest circle of competence."

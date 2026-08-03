@@ -1,0 +1,35 @@
+{
+  "name": "warren-buffett-agent",
+  "version": "0.1.0",
+  "description": "An evidence-grounded Warren Buffett deep Agent for business quality, capital allocation, downside discipline, and owner communication — part of Hall of Fame Studio.",
+  "type": "module",
+  "private": false,
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrMaii/Warren-Buffett-Agent.git"
+  },
+  "homepage": "https://github.com/MrMaii/Warren-Buffett-Agent#readme",
+  "bugs": {
+    "url": "https://github.com/MrMaii/Warren-Buffett-Agent/issues"
+  },
+  "keywords": [
+    "ai-agent",
+    "agent-skill",
+    "warren-buffett",
+    "capital-allocation",
+    "value-investing",
+    "hall-of-fame-studio",
+    "open-source-ai"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-package.mjs",
+    "fingerprint": "node scripts/fingerprint.mjs",
+    "check:response": "node scripts/check-response.mjs",
+    "media:build": "python scripts/build-media.py",
+    "test": "node --test agent/tests/qualityGate.test.mjs tests/package.test.mjs"
+  }
+}

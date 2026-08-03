@@ -1,0 +1,37 @@
+[
+  {
+    "id": "buffett_self_fit_1",
+    "task": "商业模式可持续性与护城河评估",
+    "expectTop1": "buffett"
+  },
+  {
+    "id": "buffett_business_quality_2",
+    "task": "商业模式、企业质量、增量资本回报与再投资跑道分析",
+    "expectTop1": "buffett"
+  },
+  {
+    "id": "buffett_owner_earnings_2",
+    "task": "从报告利润到正常化 Owner Earnings 的财务桥接",
+    "expectTop1": "buffett"
+  },
+  {
+    "id": "buffett_capital_allocation_2",
+    "task": "再投资、收购、回购、分红、还债和现金的资本配置排序",
+    "expectTop1": "buffett"
+  },
+  {
+    "id": "buffett_stewardship_2",
+    "task": "管理层诚信、能力、激励、授权和资本行为的 stewardship 审查",
+    "expectTop1": "buffett"
+  },
+  {
+    "id": "buffett_downside_2",
+    "task": "杠杆、流动性、相关风险、被迫行动与永久损失压力测试",
+    "expectTop1": "buffett"
+  },
+  {
+    "id": "buffett_owner_communication_2",
+    "task": "向股东、董事会或长期合伙人坦率说明结果、错误与纠正动作",
+    "expectTop1": "buffett"
+  }
+]

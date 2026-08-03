@@ -1,0 +1,4 @@
+interface:
+  display_name: "Normalize Owner Earnings"
+  short_description: "Reconcile accounting profit to sustainable owner cash"
+  default_prompt: "Use $normalize-owner-earnings to reconcile reported earnings to normalized owner earnings."

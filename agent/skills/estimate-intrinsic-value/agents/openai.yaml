@@ -1,0 +1,4 @@
+interface:
+  display_name: "Estimate Intrinsic Value"
+  short_description: "Estimate conservative scenario-based intrinsic value"
+  default_prompt: "Use $estimate-intrinsic-value to build a conservative intrinsic-value range for this business."

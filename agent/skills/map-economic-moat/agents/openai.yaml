@@ -1,0 +1,4 @@
+interface:
+  display_name: "Map Economic Moat"
+  short_description: "Map competitive advantage evidence and durability"
+  default_prompt: "Use $map-economic-moat to map this company's competitive advantage and its durability."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weigh Opportunity Cost"
+  short_description: "Compare a decision with the best realistic alternatives"
+  default_prompt: "Use $weigh-opportunity-cost to compare this decision with the best realistic alternatives."

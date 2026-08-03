@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this Agent in research or product work, please cite this repository."
+title: "Warren Buffett Deep Agent"
+type: software
+authors:
+  - name: "Hall of Fame Studio contributors"
+repository-code: "https://github.com/MrMaii/Warren-Buffett-Agent"
+url: "https://github.com/MrMaii/Warren-Buffett-Agent"
+license: Apache-2.0
+version: 0.1.0
+date-released: 2026-08-03
+keywords:
+  - artificial intelligence
+  - AI agents
+  - capital allocation
+  - evidence-grounded personas

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Evaluate Management Stewardship"
+  short_description: "Assess integrity, incentives, skill, and capital conduct"
+  default_prompt: "Use $evaluate-management-stewardship to assess management as stewards of owner capital."

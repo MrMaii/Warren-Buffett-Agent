@@ -1,0 +1,12 @@
+* text=auto
+
+*.cff text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.mjs text eol=lf
+*.svg text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+LICENSE text eol=lf

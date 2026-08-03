@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">The Warren Buffett decision lens</title>
+  <desc id="desc">Noise and urgency pass through evidence, permanent loss, reversibility, and opportunity cost to produce a durable owner decision.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090806"/><stop offset="1" stop-color="#21150f"/></linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f2e9d4"/><stop offset="1" stop-color="#d8c59e"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1400" height="720" rx="30" fill="url(#bg)"/>
+  <rect x="26" y="26" width="1348" height="668" rx="22" fill="none" stroke="#b99352" stroke-opacity=".7"/>
+  <g font-family="Consolas,Menlo,monospace">
+    <text x="70" y="82" fill="#b99352" font-size="17" letter-spacing="3">DECISION LENS · FROM PRESSURE TO OWNER JUDGMENT</text>
+    <text x="70" y="130" fill="#f2e9d4" font-family="Georgia,serif" font-size="34" font-weight="700">Calm is not passivity. It is a better order of operations.</text>
+  </g>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="70" y="208" width="230" height="370" rx="22" fill="#17120e" stroke="#7e1f2b" stroke-width="2"/>
+    <text x="102" y="250" fill="#d9c7a5" font-family="Consolas,monospace" font-size="16" letter-spacing="2">INPUT</text>
+    <text x="102" y="304" fill="#f2e9d4" font-size="22" font-weight="700">Urgency</text>
+    <text x="102" y="347" fill="#f2e9d4" font-size="22" font-weight="700">Social proof</text>
+    <text x="102" y="390" fill="#f2e9d4" font-size="22" font-weight="700">Headline noise</text>
+    <text x="102" y="433" fill="#f2e9d4" font-size="22" font-weight="700">Sunk cost</text>
+    <text x="102" y="503" fill="#a89577" font-size="17">A decision arrives hot.</text>
+    <text x="102" y="532" fill="#a89577" font-size="17">The Agent lowers the</text>
+    <text x="102" y="559" fill="#a89577" font-size="17">temperature, not the bar.</text>
+    <path d="M320 393H382" stroke="#b99352" stroke-width="2"/><path d="M372 383l12 10-12 10" fill="none" stroke="#b99352" stroke-width="2"/>
+
+    <g>
+      <rect x="390" y="205" width="505" height="80" rx="18" fill="#241b13" stroke="#b99352" stroke-opacity=".75"/>
+      <circle cx="435" cy="245" r="18" fill="#7e1f2b"/><text x="430" y="252" fill="#f2e9d4" font-size="18" font-weight="700">1</text>
+      <text x="475" y="238" fill="#f2e9d4" font-size="21" font-weight="700">What is known?</text><text x="475" y="265" fill="#b9aa8c" font-size="16">Facts · estimates · inferences · unknowns</text>
+      <rect x="390" y="302" width="505" height="80" rx="18" fill="#241b13" stroke="#b99352" stroke-opacity=".75"/>
+      <circle cx="435" cy="342" r="18" fill="#7e1f2b"/><text x="430" y="349" fill="#f2e9d4" font-size="18" font-weight="700">2</text>
+      <text x="475" y="335" fill="#f2e9d4" font-size="21" font-weight="700">What can cause permanent loss?</text><text x="475" y="362" fill="#b9aa8c" font-size="16">Impairment · leverage · forced sale · trust</text>
+      <rect x="390" y="399" width="505" height="80" rx="18" fill="#241b13" stroke="#b99352" stroke-opacity=".75"/>
+      <circle cx="435" cy="439" r="18" fill="#7e1f2b"/><text x="430" y="446" fill="#f2e9d4" font-size="18" font-weight="700">3</text>
+      <text x="475" y="432" fill="#f2e9d4" font-size="21" font-weight="700">What can be made reversible?</text><text x="475" y="459" fill="#b9aa8c" font-size="16">Stage · cap · test · preserve liquidity</text>
+      <rect x="390" y="496" width="505" height="80" rx="18" fill="#241b13" stroke="#b99352" stroke-opacity=".75"/>
+      <circle cx="435" cy="536" r="18" fill="#7e1f2b"/><text x="430" y="543" fill="#f2e9d4" font-size="18" font-weight="700">4</text>
+      <text x="475" y="529" fill="#f2e9d4" font-size="21" font-weight="700">What is the next-best use?</text><text x="475" y="556" fill="#b9aa8c" font-size="16">Capital · time · attention · reputation</text>
+    </g>
+    <path d="M916 393H978" stroke="#b99352" stroke-width="2"/><path d="M968 383l12 10-12 10" fill="none" stroke="#b99352" stroke-width="2"/>
+    <rect x="987" y="208" width="343" height="370" rx="22" fill="url(#paper)"/>
+    <text x="1025" y="250" fill="#7e1f2b" font-family="Consolas,monospace" font-size="16" letter-spacing="2">OUTPUT</text>
+    <text x="1025" y="310" fill="#17130f" font-family="Georgia,serif" font-size="32" font-weight="700">Durable decision</text>
+    <text x="1025" y="367" fill="#40362b" font-size="19">• explicit downside</text>
+    <text x="1025" y="408" fill="#40362b" font-size="19">• preserved options</text>
+    <text x="1025" y="449" fill="#40362b" font-size="19">• named alternative</text>
+    <text x="1025" y="490" fill="#40362b" font-size="19">• falsifier + review</text>
+    <path d="M1030 548 C1100 500 1170 520 1288 388" fill="none" stroke="#7e1f2b" stroke-width="4"/>
+    <circle cx="1030" cy="548" r="6" fill="#7e1f2b"/><circle cx="1288" cy="388" r="7" fill="#7e1f2b"/>
+  </g>
+  <text x="70" y="652" fill="#9c8d72" font-family="Consolas,monospace" font-size="15">VOLATILITY IS NOT THE SAME AS PERMANENT LOSS · PATIENCE STILL REQUIRES A REVIEW DATE</text>
+</svg>

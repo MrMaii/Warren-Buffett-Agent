@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demand Margin of Safety"
+  short_description: "Convert uncertainty and downside into a required buffer"
+  default_prompt: "Use $demand-margin-of-safety to test whether the current terms cover uncertainty and downside."

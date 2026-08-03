@@ -1,0 +1,57 @@
+{"id":"O001","source":"S017","context":"technical encyclopedia question","observation":"Admits limited technical fluency with a brief self-directed joke, then answers the business and product substance in detail.","supports":["C02","C03"]}
+{"id":"O002","source":"S017","context":"unfamiliar domain","observation":"The competence admission narrows precision; it does not end participation.","supports":["C02"]}
+{"id":"O003","source":"S016","context":"annual meeting Q&A","observation":"Uses ordinary examples to explain complex insurance and investment mechanics.","supports":["C01","C07"]}
+{"id":"O004","source":"S018","context":"mistakes","observation":"Treats errors of omission as learnable decisions rather than hiding them.","supports":["C06"]}
+{"id":"O005","source":"S019","context":"young questioner","observation":"Responds to a child's question with humor before offering a substantive answer.","supports":["C01","C03"]}
+{"id":"O006","source":"S020","context":"Dexter Shoe","observation":"Calls the acquisition his own dumb decision without blaming the seller.","supports":["C06"]}
+{"id":"O007","source":"S021","context":"success and happiness","observation":"Defines success through love from desired relationships rather than money or public honors.","supports":["C04","C05"]}
+{"id":"O008","source":"S022","context":"love and money","observation":"Uses a humorous hypothetical about buying love, then lands a serious point about becoming lovable.","supports":["C03","C05"]}
+{"id":"O009","source":"S021","context":"long-term performance","observation":"Frames fretting as harmful to sustained judgment.","supports":["C08","C09"]}
+{"id":"O010","source":"S023","context":"young people","observation":"Gives advice in terms of habits, trust, and the people one chooses, not status metrics.","supports":["C04","C05"]}
+{"id":"O011","source":"S024","context":"life advice","observation":"Moves naturally between work, passion, relationships, and money without treating life as outside scope.","supports":["C04","C05"]}
+{"id":"O012","source":"S025","context":"life choices","observation":"Connects durable happiness to work and relationships rather than a financial scorecard.","supports":["C05"]}
+{"id":"O013","source":"S026","context":"Irish banks","observation":"Says he was not paying attention rather than inventing an excuse or scapegoat.","supports":["C06"]}
+{"id":"O014","source":"S027","context":"reputation","observation":"Treats reputation as a non-tradable boundary and communicates it in memorable ordinary language.","supports":["C07","C10"]}
+{"id":"O015","source":"S028","context":"reputation instruction","observation":"Makes the ethical boundary shorter and clearer than the surrounding financial discussion.","supports":["C07","C10"]}
+{"id":"O016","source":"S029","context":"startup founder asks about mistakes","observation":"Admits having made many mistakes and redirects attention to avoiding risks that remove the ability to keep playing.","supports":["C06","C08"]}
+{"id":"O017","source":"S030","context":"critical shareholder question","observation":"Meets criticism with self-deprecation before addressing the substance.","supports":["C03","C09"]}
+{"id":"O018","source":"S030","context":"disagreement with Munger","observation":"Describes decades of disagreement without turning it into interpersonal combat.","supports":["C04","C09"]}
+{"id":"O019","source":"S031","context":"Dexter Shoe retrospective","observation":"Explicitly says nobody misled him; the wrong answer was his.","supports":["C06"]}
+{"id":"O020","source":"S031","context":"error discussion","observation":"Adds a light joke without softening responsibility for the economic loss.","supports":["C03","C06"]}
+{"id":"O021","source":"S032","context":"friendship interview","observation":"Shows reciprocal admiration, easy humor, and comfort with different temperaments.","supports":["C03","C04"]}
+{"id":"O022","source":"S032","context":"long partnership","observation":"Frames disagreement as compatible with affection and shared standards.","supports":["C04","C09"]}
+{"id":"O023","source":"S033","context":"missed technology winners","observation":"Openly admires Bezos and acknowledges missed opportunities without resentment.","supports":["C06","C09"]}
+{"id":"O024","source":"S034","context":"IBM investment","observation":"Uses the direct phrase that he was wrong and explains why the judgment changed.","supports":["C06","C07"]}
+{"id":"O025","source":"S035","context":"Charlie Munger friendship","observation":"Publicly states that the friendship improved his life, showing gratitude beyond professional utility.","supports":["C04","C05"]}
+{"id":"O026","source":"S036","context":"nine-year-old question","observation":"Immediately closes status distance with a playful remark, then engages seriously.","supports":["C01","C03"]}
+{"id":"O027","source":"S036","context":"circle of competence","observation":"Treats competence as something that can expand while accepting personal limits.","supports":["C02","C08"]}
+{"id":"O028","source":"S036","context":"change and uncertainty","observation":"Describes a changing world as part of what makes life interesting rather than as a reason to withdraw.","supports":["C02","C08"]}
+{"id":"O029","source":"S037","context":"pandemic meeting","observation":"Uses long historical context to reduce panic without denying immediate uncertainty.","supports":["C08"]}
+{"id":"O030","source":"S038","context":"crisis outlook","observation":"Pairs long-run confidence with explicit admission that tomorrow cannot be known.","supports":["C08"]}
+{"id":"O031","source":"S038","context":"airline sale","observation":"Names the position as his mistake and explains the changed mechanism rather than blaming management.","supports":["C06","C08"]}
+{"id":"O032","source":"S039","context":"airline Q&A","observation":"Praises airline operators while still changing the investment decision.","supports":["C06","C09"]}
+{"id":"O033","source":"S039","context":"capital under uncertainty","observation":"Values cash as option-preserving capacity rather than predicting a market bottom.","supports":["C08","C10"]}
+{"id":"O034","source":"S001","context":"Owner's Manual","observation":"Addresses shareholders as owner-partners and states operating principles plainly.","supports":["C07","C10"]}
+{"id":"O035","source":"S001","context":"owner partnership","observation":"Defines the relationship before presenting mechanics, making communication an operating system rather than marketing.","supports":["C04","C07"]}
+{"id":"O036","source":"S002","context":"2024 letter","observation":"Uses mistake and error repeatedly and treats delay in correction as a serious failure.","supports":["C06"]}
+{"id":"O037","source":"S002","context":"praise and criticism","observation":"Prefers naming people for praise and criticizing by category where possible.","supports":["C09"]}
+{"id":"O038","source":"S005","context":"2021 letter","observation":"Uses role reversal to judge whether communication is fair to the owner.","supports":["C04","C07"]}
+{"id":"O039","source":"S005","context":"trust","observation":"Acknowledges the honor and responsibility created by other people's trust.","supports":["C04","C10"]}
+{"id":"O040","source":"S008","context":"2018 letter","observation":"Writes for long-term partners rather than analysts focused on quarterly targets.","supports":["C07","C10"]}
+{"id":"O041","source":"S014","context":"2009 letter","observation":"Chooses direct, informative explanation over a short soundbite after a crisis.","supports":["C07","C08"]}
+{"id":"O042","source":"S012","context":"50-year review","observation":"Reviews good and bad outcomes across a very long horizon without erasing failures.","supports":["C06","C10"]}
+{"id":"O043","source":"S041","context":"archive profile","observation":"Independent summary emphasizes common sense, modest lifestyle, approachability, and self-deprecating humor.","supports":["C01","C03"]}
+{"id":"O044","source":"S042","context":"humor collection","observation":"Humor appears repeatedly across business and life contexts, not only in rehearsed jokes.","supports":["C03"]}
+{"id":"O045","source":"S043","context":"friendship collection","observation":"Friendship is treated as more important than money and as a subject worthy of practical advice.","supports":["C04","C05"]}
+{"id":"O046","source":"S044","context":"longtime friend observation","observation":"Gates describes thoughtfulness, kindness, humor, and personal attention over a long relationship.","supports":["C03","C04"]}
+{"id":"O047","source":"S045","context":"independent meeting report","observation":"Reporting identifies folksy wisdom and jokes as central to the long shareholder relationship.","supports":["C01","C03","C07"]}
+{"id":"O048","source":"S046","context":"independent public observation","observation":"Self-effacing humor is described as a major draw rather than incidental decoration.","supports":["C03"]}
+{"id":"O049","source":"S040","context":"archive scale","observation":"Behavior patterns can be compared across decades and hundreds of exchanges, reducing reliance on isolated quotations.","supports":["C11"]}
+{"id":"O050","source":"S003","context":"long-term owners","observation":"Treats permanence and a stable shareholder base as sources of freedom from short-term performance pressure.","supports":["C08","C10"]}
+{"id":"O051","source":"S006","context":"decentralization","observation":"Combines trust in operators with clear capital and reputation boundaries.","supports":["C04","C10"]}
+{"id":"O052","source":"S010","context":"management and acquisitions","observation":"Evaluates managers through behavior and capital record more than polished presentation.","supports":["C09","C10"]}
+{"id":"O053","source":"S013","context":"manager relationships","observation":"Gives autonomy after trust while retaining escalation for material capital and reputation concerns.","supports":["C04","C10"]}
+{"id":"O054","source":"S015","context":"derivatives risk","observation":"Explains a technical risk with causal language and memorable images while keeping the downside concrete.","supports":["C07","C08"]}
+{"id":"O055","source":"S007","context":"long-run outlook","observation":"Optimism is paired with financial endurance and preparation for adverse periods.","supports":["C08"]}
+{"id":"O056","source":"S009","context":"mistakes and opportunity","observation":"Can acknowledge large misses while remaining curious about new evidence and other people's strengths.","supports":["C02","C06","C09"]}
+

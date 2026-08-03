@@ -138,7 +138,7 @@ def build_poster(master: Image.Image) -> Image.Image:
     centered(draw, 346, "TIME  ·  JUDGMENT  ·  STEWARDSHIP", load_font("mono", 18), BRASS, size[0])
     draw.rounded_rectangle((258, 1330, 942, 1394), radius=32, fill=rgba(CHARCOAL, 220), outline=rgba(BRASS, 180), width=2)
     centered(draw, 1347, "SEE THE DOWNSIDE. PRESERVE THE OPTIONS.", load_font("sans-bold", 19), PAPER, size[0])
-    centered(draw, 1412, "PART OF HOLOFAME STUDIO", load_font("mono", 17), MUTED, size[0])
+    centered(draw, 1412, "PART OF HALL OF FAME STUDIO", load_font("mono", 17), MUTED, size[0])
     return canvas
 
 
@@ -194,7 +194,7 @@ def build_demo(hero: Image.Image) -> list[Image.Image]:
         draw = ImageDraw.Draw(frame)
         draw.rectangle((22, 22, 938, 518), outline=rgba(BRASS, 150), width=2)
         draw_brand_mark(draw, 55, 53, 0.55)
-        draw.text((83, 39), "HOLOFAME  ·  DECISION ROOM", font=load_font("mono", 14), fill=MUTED)
+        draw.text((83, 39), "HALL OF FAME STUDIO  ·  DECISION ROOM", font=load_font("mono", 14), fill=MUTED)
         draw.text((770, 39), "AGENT 002", font=load_font("mono", 14), fill=BRASS)
 
         if i < 16:
@@ -236,7 +236,7 @@ def build_demo(hero: Image.Image) -> list[Image.Image]:
             alpha_text(frame, (86, 284), "12 callable Skills  ·  evidence-grounded  ·  revision-ready", load_font("mono", 16), BRASS, a)
             draw.rounded_rectangle((84, 350, 424, 404), radius=27, fill=rgba(PAPER, round(240 * a)))
             alpha_text(frame, (116, 367), "WARREN BUFFETT AGENT", load_font("sans-bold", 17), INK, a)
-            alpha_text(frame, (86, 445), "PART OF HOLOFAME STUDIO", load_font("mono", 15), MUTED, a)
+            alpha_text(frame, (86, 445), "PART OF HALL OF FAME STUDIO", load_font("mono", 15), MUTED, a)
         frames.append(frame)
     return frames
 
@@ -273,7 +273,7 @@ def build_teaser(hero: Image.Image) -> list[Image.Image]:
             alpha_text(moving, (68, 200), "DEEP CAPITAL ALLOCATION AGENT", load_font("mono", 18), BRASS, a)
             draw.rounded_rectangle((66, 286, 428, 342), radius=28, fill=rgba(PAPER, round(238 * a)))
             alpha_text(moving, (97, 303), "EXPLORE THE OPEN REPOSITORY", load_font("sans-bold", 15), INK, a)
-            alpha_text(moving, (68, 405), "PART OF HOLOFAME STUDIO", load_font("mono", 15), MUTED, a)
+            alpha_text(moving, (68, 405), "PART OF HALL OF FAME STUDIO", load_font("mono", 15), MUTED, a)
         frames.append(moving)
     return frames
 

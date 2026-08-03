@@ -14,7 +14,7 @@ turning the Agent into Wall Street theater.
 | `diagrams/02-capability-clusters.svg` | Explain all twelve callable Skills | Four balanced capability families around one human core | Skills remain tools, not personality |
 | `diagrams/03-mode-router.svg` | Teach when Skills activate | Four conversation modes with visible Skill limits | Ordinary conversation stays human |
 | `diagrams/04-quality-loop.svg` | Explain response governance | Draft → quality gate → revise/release/fallback | One revision, then bounded behavior |
-| `diagrams/05-hall-of-fame-network.svg` | Connect the Agent to HoloFame Studio | One Agent joins a governed multi-Agent roundtable | Standalone package does not replace Studio integration |
+| `diagrams/05-hall-of-fame-network.svg` | Connect the Agent to Hall of Fame Studio | One Agent joins a governed multi-Agent roundtable | Standalone package does not replace Studio integration |
 
 ## Art direction
 

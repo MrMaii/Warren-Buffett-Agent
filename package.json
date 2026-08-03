@@ -1,6 +1,6 @@
 {
   "name": "warren-buffett-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An evidence-grounded Warren Buffett deep Agent for business quality, capital allocation, downside discipline, and owner communication — part of Hall of Fame Studio.",
   "type": "module",
   "private": false,

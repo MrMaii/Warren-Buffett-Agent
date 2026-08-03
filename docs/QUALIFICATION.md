@@ -33,7 +33,7 @@ It does not mean:
 - a human Director has issued `pass`;
 - every live model will produce the same behavior;
 - the Agent may provide current investment authority or promise returns;
-- a standalone repository replaces integration with HoloFame Studio.
+- a standalone repository replaces integration with Hall of Fame Studio.
 
 ## Remaining human gates
 

@@ -59,9 +59,26 @@ test('states product, status, financial, and identity boundaries', async () => {
   const notice = await readFile(new URL('NOTICE.md', root), 'utf8');
   assert.match(readme, /not\s+(?:official\s+)?financial advice/i);
   assert.match(readme, /does not promise returns/i);
-  assert.match(readme, /Part of <a href="https:\/\/github\.com\/MrMaii\/Hall-of-Fame-Studio">HoloFame Studio<\/a>/);
+  assert.match(readme, /Part of <a href="https:\/\/github\.com\/MrMaii\/Hall-of-Fame-Studio">Hall of Fame Studio<\/a>/);
   assert.match(notice, /not\s+affiliated with[\s\S]*Warren Buffett/i);
   assert.match(notice, /Berkshire Hathaway/);
+});
+
+test('uses the canonical Hall of Fame Studio name everywhere in release text', async () => {
+  const files = [
+    'README.md',
+    'README.zh-CN.md',
+    'SKILL.md',
+    'docs/QUALIFICATION.md',
+    'docs/HALL-OF-FAME-STUDIO.md',
+    'assets/README.md',
+    'assets/diagrams/05-hall-of-fame-network.svg',
+    'scripts/build-media.py',
+  ];
+  const text = (await Promise.all(files.map((path) => readFile(new URL(path, root), 'utf8')))).join('\n');
+  const forbiddenBrand = new RegExp([['Holo', 'Fame'].join(''), ['Holo', ' ', 'Fame'].join('')].join('|'), 'i');
+  assert.doesNotMatch(text, forbiddenBrand);
+  assert.match(text, /Hall of Fame Studio/);
 });
 
 test('contains no stale Steve Jobs packaging copy', async () => {

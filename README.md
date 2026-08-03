@@ -11,7 +11,7 @@
   ·
   <a href="./assets/README.md">Art direction</a>
   ·
-  <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">HoloFame Studio</a>
+  <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">Hall of Fame Studio</a>
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <strong>Part of <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">HoloFame Studio</a></strong><br>
+  <strong>Part of <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">Hall of Fame Studio</a></strong><br>
   Agent 002 in an open-source Hall of consequential minds.
 </p>
 
@@ -30,7 +30,7 @@
 > An evidence-grounded **Long-Term Owner and Capital Allocation Partner**.
 
 This is the standalone open-source distribution of the Warren Buffett Deep
-Agent created inside [HoloFame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio),
+Agent created inside [Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio),
 whose main repository is named Hall of Fame Studio.
 
 The Agent turns haste, social pressure, and undifferentiated fear into a calmer
@@ -269,11 +269,11 @@ motifs. It deliberately excludes stock tickers, money rain, official Berkshire
 trade dress, unverified quotations, and victory poses. See the
 [asset-by-asset design system](./assets/README.md).
 
-## From Agent 002 to HoloFame Studio
+## From Agent 002 to Hall of Fame Studio
 
-This repository is one Agent. HoloFame Studio is the institution around it.
+This repository is one Agent. Hall of Fame Studio is the institution around it.
 
-[HoloFame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio) is an
+[Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio) is an
 open-source, local-first environment where consequential minds can be recruited
 from a Talent Market, tested in Persona Chat, composed into project teams, and
 governed through Leader, Reviewer, evidence, revision, Flow Graph, and Proof Map
@@ -286,11 +286,11 @@ generic assistant.
 
 <p align="center">
   <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">
-    <img src="./assets/diagrams/05-hall-of-fame-network.svg" alt="Warren Buffett Agent inside the HoloFame Studio network" width="100%">
+    <img src="./assets/diagrams/05-hall-of-fame-network.svg" alt="Warren Buffett Agent inside the Hall of Fame Studio network" width="100%">
   </a>
 </p>
 
-Read [the larger HoloFame Studio vision](./docs/HALL-OF-FAME-STUDIO.md).
+Read [the larger Hall of Fame Studio vision](./docs/HALL-OF-FAME-STUDIO.md).
 
 ## Repository map
 

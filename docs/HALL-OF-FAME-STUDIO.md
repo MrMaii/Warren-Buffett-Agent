@@ -1,6 +1,6 @@
-# One room in HoloFame Studio
+# One room in Hall of Fame Studio
 
-[HoloFame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio), whose main
+[Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio), whose main
 repository is named Hall of Fame Studio, is a local-first open-source project
 for building and composing evidence-grounded persona Agents.
 

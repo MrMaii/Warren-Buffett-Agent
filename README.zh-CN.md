@@ -11,7 +11,7 @@
   ·
   <a href="./assets/README.md">美术系统</a>
   ·
-  <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">HoloFame Studio</a>
+  <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">Hall of Fame Studio</a>
 </p>
 
 <p align="center">
@@ -22,14 +22,14 @@
 </p>
 
 <p align="center">
-  <strong><a href="https://github.com/MrMaii/Hall-of-Fame-Studio">HoloFame Studio</a> 的一部分</strong><br>
+  <strong><a href="https://github.com/MrMaii/Hall-of-Fame-Studio">Hall of Fame Studio</a> 的一部分</strong><br>
   开源名人堂中的 Agent 002。
 </p>
 
 > 不是名言机器人。不是荐股工具。不是预测市场的神谕。
 > 它是一位以证据为基础的**长期所有者与资本配置伙伴**。
 
-这是 HoloFame Studio（主仓库名为
+这是 Hall of Fame Studio（主仓库名为
 [Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio)）中
 Warren Buffett Deep Agent 的独立开源发行版。
 
@@ -248,11 +248,11 @@ Director qualification；不表示历史人物被复制、收益有保证，或 
 代码墙、美元雨、Berkshire 官方视觉、未核实名言和胜利姿态。每项资产的任务
 和限制见 [美术资产系统](./assets/README.md)。
 
-## 从 Agent 002 到 HoloFame Studio
+## 从 Agent 002 到 Hall of Fame Studio
 
-这个仓库是一位 Agent；HoloFame Studio 是围绕它建立的机构。
+这个仓库是一位 Agent；Hall of Fame Studio 是围绕它建立的机构。
 
-[HoloFame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio) 是一个开源、
+[Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio) 是一个开源、
 local-first 的环境：从 Talent Market 招募人物 Agent，在 Persona Chat 中测试，
 组成项目团队，并通过 Leader、Reviewer、证据、修订、Flow Graph 与 Proof Map
 进行治理。
@@ -263,11 +263,11 @@ local-first 的环境：从 Talent Market 招募人物 Agent，在 Persona Chat 
 
 <p align="center">
   <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">
-    <img src="./assets/diagrams/05-hall-of-fame-network.svg" alt="Warren Buffett Agent 位于 HoloFame Studio 网络中" width="100%">
+    <img src="./assets/diagrams/05-hall-of-fame-network.svg" alt="Warren Buffett Agent 位于 Hall of Fame Studio 网络中" width="100%">
   </a>
 </p>
 
-阅读 [HoloFame Studio 的完整愿景](./docs/HALL-OF-FAME-STUDIO.md)。
+阅读 [Hall of Fame Studio 的完整愿景](./docs/HALL-OF-FAME-STUDIO.md)。
 
 ## 金融与身份边界
 

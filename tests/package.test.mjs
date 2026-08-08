@@ -23,11 +23,13 @@ test('packages the complete twelve-Skill candidate', async () => {
   }
 });
 
-test('README delivers the launch story and all required media', async () => {
+test('README delivers the launch story and the unified Archive Plate media', async () => {
   const readme = await readFile(new URL('README.md', root), 'utf8');
   const chinese = await readFile(new URL('README.zh-CN.md', root), 'utf8');
 
   for (const source of [readme, chinese]) {
+    assert.match(source, /Archive Plate/);
+    assert.match(source, /3:2/);
     assert.match(source, /assets\/hero\.png/);
     assert.match(source, /assets\/poster\.png/);
     assert.match(source, /assets\/demo\.gif/);
@@ -37,11 +39,14 @@ test('README delivers the launch story and all required media', async () => {
   }
 
   const requiredAssets = [
+    'assets/source/hero-master.png',
+    'assets/source/poster-master.png',
     'assets/hero.png',
     'assets/poster.png',
     'assets/social-card.png',
     'assets/demo.gif',
     'assets/teaser.gif',
+    'assets/README.md',
     'assets/diagrams/01-decision-lens.svg',
     'assets/diagrams/02-capability-clusters.svg',
     'assets/diagrams/03-mode-router.svg',
@@ -51,6 +56,14 @@ test('README delivers the launch story and all required media', async () => {
   for (const path of requiredAssets) {
     const info = await stat(new URL(path, root));
     assert.ok(info.size > 500, `${path} must be a real asset`);
+  }
+
+  const sourceMaster = await readFile(new URL('assets/source/hero-master.png', root));
+  const compatibilityMaster = await readFile(new URL('assets/source/poster-master.png', root));
+  assert.equal(sourceMaster.equals(compatibilityMaster), true, 'source masters must be identical Archive Plates');
+  for (const path of ['assets/hero.png', 'assets/poster.png', 'assets/social-card.png']) {
+    const output = await readFile(new URL(path, root));
+    assert.equal(output.equals(sourceMaster), true, `${path} must preserve the supplied Archive Plate`);
   }
 });
 

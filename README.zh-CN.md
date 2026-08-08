@@ -40,32 +40,27 @@ Warren Buffett Deep Agent 的独立开源发行版。
 它不声称复制 Warren Buffett，不代表本人，不知道其当前持仓，也不提供
 官方投资意见。
 
-## 短宣传循环
+## 发布视觉系统
 
 <p align="center">
-  <img src="./assets/teaser.gif" alt="Warren Buffett Agent 002 短宣传循环" width="100%">
+  <img src="./assets/teaser.gif" alt="Warren Buffett Agent-002 Archive Plate 动态研究" width="100%">
 </p>
 
 这里的公众人物是研究对象；真正发布的产品，是一套关于证据、所有者
 视角、机会成本、生存、坦率和修订的决策系统。
 
+整套发布统一采用 **Archive Plate**：3:2 横版深色石材场域、温暖铜金衬线文字、
+右侧竖向人物窗、左侧身份排版和克制的档案元数据。成品海报已经包含构图与文字，
+媒体脚本只负责保持这套视觉，不再叠加第二套方框或标题。
+
 ## 动态演示
 
 <p align="center">
-  <img src="./assets/demo.gif" alt="动态演示：把高风险收购问题转化为可检查的所有者决策" width="100%">
+  <img src="./assets/demo.gif" alt="动态演示：Warren Buffett Archive Plate 的克制动态研究" width="100%">
 </p>
 
-这段演示是确定性制作的，不伪装成实时模型录屏。它展示 Agent 必须交付
-的判断结构：
-
-```text
-高信念问题
-→ 事实 / 估计 / 未知
-→ 永久损失路径
-→ 可逆结构
-→ 下一最佳方案
-→ 具名决策产物
-```
+这段动态研究是确定性制作的，只在保留成品构图的基础上加入克制的档案式移动。
+Agent 的判断结构由能力章节和图表说明，不由海报伪装成实时模型录屏。
 
 <p align="center">
   <img src="./assets/diagrams/01-decision-lens.svg" alt="Warren Buffett Agent 决策透镜" width="100%">
@@ -225,7 +220,7 @@ if (violations.length > 0) {
 npm run validate
 npm run fingerprint
 npm test
-python scripts/build-media.py
+npm run media:build
 ```
 
 候选指纹：
@@ -241,12 +236,14 @@ Director qualification；不表示历史人物被复制、收益有保证，或 
 ## 主发布海报
 
 <p align="center">
-  <img src="./assets/poster.png" alt="Warren Buffett Deep Agent 002 主发布海报" width="640">
+  <img src="./assets/poster.png" alt="Warren Buffett Deep Agent-002 主 Archive Plate" width="640">
 </p>
 
-整套视觉使用档案馆、年报纸张、旧黄铜、深酒红和长期曲线；明确排除股票
-代码墙、美元雨、Berkshire 官方视觉、未核实名言和胜利姿态。每项资产的任务
-和限制见 [美术资产系统](./assets/README.md)。
+这是统一的 3:2 Archive Plate：深色石材场域、温暖铜金编辑风文字、右侧人物窗、
+左侧身份排版和克制档案元数据都已包含在成品图内。脚本会把它原样复制到所有
+静态表面，不再添加第二个清晰窗口或标题系统。明确排除股票代码墙、美元雨、
+Berkshire 官方视觉、未核实名言和胜利姿态。每项资产的任务和限制见
+[美术资产系统](./assets/README.md)。
 
 ## 从 Agent 002 到 Hall of Fame Studio
 

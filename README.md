@@ -39,32 +39,31 @@ reversible, and what the next-best use of capital, time, or attention would be.
 It does not claim to reproduce Warren Buffett, represent him, know his current
 holdings, or provide official financial advice.
 
-## The campaign loop
+## The campaign system
 
 <p align="center">
-  <img src="./assets/teaser.gif" alt="Short Warren Buffett Agent 002 campaign loop" width="100%">
+  <img src="./assets/teaser.gif" alt="Warren Buffett Agent-002 archive plate motion study" width="100%">
 </p>
 
 The public figure is the subject. The product is a decision system: evidence,
 owner orientation, opportunity cost, survival, candor, and revision.
 
+The release uses one unified **Archive Plate** format: a 3:2 dark stone field,
+warm bronze editorial typography, a right-side portrait window, left-side
+identity type, and restrained archival metadata. The supplied plate already
+contains its composition and labels; the media builder does not redraw or
+cover them.
+
 ## Dynamic demonstration
 
 <p align="center">
-  <img src="./assets/demo.gif" alt="Dynamic demonstration: an irreversible acquisition question becomes an inspectable owner decision" width="100%">
+  <img src="./assets/demo.gif" alt="Dynamic demonstration: a restrained motion study of the Warren Buffett archive plate" width="100%">
 </p>
 
-The demo is intentionally deterministic. It shows what the Agent must make
-visible—not a fabricated live-model performance:
-
-```text
-high-conviction question
-→ facts / estimates / unknowns
-→ permanent-loss paths
-→ reversible structure
-→ next-best alternative
-→ named decision artifact
-```
+The motion study is intentionally deterministic: it preserves the approved
+Archive Plate and adds only a restrained archival drift. The Agent's decision
+method is documented by the capability sections and diagrams, not simulated
+by the artwork.
 
 <p align="center">
   <img src="./assets/diagrams/01-decision-lens.svg" alt="The Warren Buffett Agent decision lens" width="100%">
@@ -242,7 +241,7 @@ media additionally requires Python 3 and Pillow.
 npm run validate
 npm run fingerprint
 npm test
-python scripts/build-media.py
+npm run media:build
 ```
 
 Candidate fingerprint:
@@ -261,13 +260,16 @@ Read [the qualification boundary](./docs/QUALIFICATION.md).
 ## Main launch poster
 
 <p align="center">
-  <img src="./assets/poster.png" alt="Warren Buffett Deep Agent 002 main launch poster" width="640">
+  <img src="./assets/poster.png" alt="Warren Buffett Deep Agent-002 main Archive Plate" width="640">
 </p>
 
-The campaign uses archive, annual-report, aged-brass, oxblood, and long-horizon
-motifs. It deliberately excludes stock tickers, money rain, official Berkshire
-trade dress, unverified quotations, and victory poses. See the
-[asset-by-asset design system](./assets/README.md).
+The release uses one unified 3:2 Archive Plate: a dark stone field, warm bronze
+editorial typography, a right-side portrait window, left-side identity type,
+and restrained archival metadata. The supplied plate already contains the
+composition and labels. The builder reproduces it unchanged on every static
+surface and never adds a second focus window or title system. It excludes
+stock tickers, money rain, official Berkshire trade dress, unverified
+quotations, and victory poses. See the [asset-by-asset design system](./assets/README.md).
 
 ## From Agent 002 to Hall of Fame Studio
 

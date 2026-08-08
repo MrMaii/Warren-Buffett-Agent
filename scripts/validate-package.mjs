@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { access, readFile } from 'node:fs/promises';
+import { access, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -19,6 +19,28 @@ function resolveInsideAgent(relativePath) {
 const manifest = JSON.parse(await readFile(path.join(agentRoot, 'agent.json'), 'utf8'));
 assert.equal(manifest.personaSlug, 'buffett');
 assert.equal(manifest.skills.length, 12);
+
+for (const relativePath of [
+  'assets/source/hero-master.png',
+  'assets/source/poster-master.png',
+  'assets/hero.png',
+  'assets/poster.png',
+  'assets/social-card.png',
+  'assets/demo.gif',
+  'assets/teaser.gif',
+  'assets/README.md',
+]) {
+  const info = await stat(path.join(repositoryRoot, relativePath));
+  assert.ok(info.size > 500, `${relativePath} must be a real release asset`);
+}
+
+const archivePlate = await readFile(path.join(repositoryRoot, 'assets/source/hero-master.png'));
+const compatibilityPlate = await readFile(path.join(repositoryRoot, 'assets/source/poster-master.png'));
+assert.equal(archivePlate.equals(compatibilityPlate), true, 'Source masters must be identical Archive Plates');
+for (const relativePath of ['assets/hero.png', 'assets/poster.png', 'assets/social-card.png']) {
+  const output = await readFile(path.join(repositoryRoot, relativePath));
+  assert.equal(output.equals(archivePlate), true, `${relativePath} must preserve the supplied Archive Plate`);
+}
 
 const references = [
   manifest.projectDocument,

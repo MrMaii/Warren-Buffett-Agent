@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">A good voice is not enough. The decision must survive inspection.</title>
+  <desc id="desc">声音好听还不够，决定必须经得起检查</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#171411"/>
+      <stop offset=".52" stop-color="#302a22"/>
+      <stop offset="1" stop-color="#1f1b17"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#625747" stop-opacity=".58"/>
+      <stop offset=".48" stop-color="#332c24" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#191612" stop-opacity=".84"/>
+    </linearGradient>
+    <linearGradient id="glass-light" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eadcc2" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#bfa77b" stop-opacity=".86"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f1e6cf"/>
+      <stop offset=".5" stop-color="#c5a875"/>
+      <stop offset="1" stop-color="#6e5a41"/>
+    </linearGradient>
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" seed="19" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="grain"/>
+      <feComponentTransfer in="grain">
+        <feFuncA type="table" tableValues="0 .18"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="grain" mode="screen"/>
+    </filter>
+    <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#c5a875"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="820" rx="26" fill="url(#bg)"/>
+  <rect x="24" y="24" width="1352" height="772" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.8" stroke-opacity=".72"/>
+  <path d="M48 86V48H86M1314 48H1352V86M48 734V772H86M1314 772H1352V734" fill="none" stroke="#eadcc2" stroke-opacity=".52" stroke-width="1.4"/>
+  <rect width="1400" height="820" rx="26" fill="#eadcc2" opacity=".12" filter="url(#grain)"/>
+  <text x="70" y="52" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="15" font-weight="500" letter-spacing="2.4">HALL OF FAME STUDIO  /  AGENT 002  /  WARREN BUFFETT</text><text x="70" y="94" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="31" font-weight="700">A good voice is not enough. The decision must survive inspection.</text><text x="70" y="127" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="18" font-weight="400">声音好听还不够，决定必须经得起检查</text>
+  <rect x="70" y="245" width="250" height="190" rx="22" fill="url(#glass-light)" stroke="#c5a875" stroke-width="1.6" stroke-opacity=".78"/><rect x="79" y="254" width="232" height="172" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><rect x="380" y="190" width="570" height="300" rx="22" fill="url(#glass)" stroke="#c5a875" stroke-width="1.6" stroke-opacity=".78"/><rect x="389" y="199" width="552" height="282" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><rect x="1020" y="205" width="300" height="125" rx="22" fill="url(#glass-light)" stroke="url(#edge)" stroke-width="1.6" stroke-opacity=".78"/><rect x="1029" y="214" width="282" height="107" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><rect x="1020" y="380" width="300" height="125" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.6" stroke-opacity=".78"/><rect x="1029" y="389" width="282" height="107" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><path d="M330 340 L365 340" fill="none" stroke="#c5a875" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/><path d="M965 268 L1005 268" fill="none" stroke="#c5a875" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/><path d="M965 425 L1005 425" fill="none" stroke="#874139" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/><path d="M1170 530 C1170 615 655 620 655 520" fill="none" stroke="#874139" stroke-width="1.8" stroke-dasharray="8 8" marker-end="url(#arrow)"/><text x="195" y="290" fill="#874139" font-family="Consolas,'Courier New',monospace" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="1.5">DRAFT</text><text x="195" y="350" fill="#31271e" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="28" font-weight="700" text-anchor="middle">Answer</text><text x="195" y="386" fill="#675440" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="400" text-anchor="middle">method + relationship</text><text x="420" y="235" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="15" font-weight="700" letter-spacing="1.7">BUFFETT QUALITY GATE</text><text x="420" y="290" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="17" font-weight="400">✓  facts, estimates, unknowns separated</text><text x="420" y="328" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="17" font-weight="400">✓  no fabricated memory or current holdings</text><text x="420" y="366" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="17" font-weight="400">✓  no competence-based social exit</text><text x="420" y="404" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="17" font-weight="400">✓  no cheap reassurance or guaranteed return</text><text x="420" y="442" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="17" font-weight="400">✓  required artifact, downside, review, STOP</text><text x="1170" y="250" fill="#874139" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.4">CLEAR</text><text x="1170" y="294" fill="#31271e" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="28" font-weight="700" text-anchor="middle">Release</text><text x="1170" y="425" fill="#874139" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="1.4">VIOLATION</text><text x="1170" y="469" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="22" font-weight="700" text-anchor="middle">Revise or fallback</text>
+  <text x="70" y="787" fill="#b9aa8f" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="400" letter-spacing="1.1">REPAIR THE RESPONSIBLE UPSTREAM RULE · DO NOT POLISH A BROKEN CLAIM</text>
+</svg>

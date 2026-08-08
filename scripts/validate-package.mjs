@@ -34,6 +34,24 @@ for (const relativePath of [
   assert.ok(info.size > 500, `${relativePath} must be a real release asset`);
 }
 
+const diagramPaths = [
+  'assets/diagrams/01-method-lens.svg',
+  'assets/diagrams/02-evidence-chain.svg',
+  'assets/diagrams/03-capability-clusters.svg',
+  'assets/diagrams/04-mode-router.svg',
+  'assets/diagrams/05-quality-loop.svg',
+  'assets/diagrams/06-studio-network.svg',
+];
+
+for (const relativePath of diagramPaths) {
+  const info = await stat(path.join(repositoryRoot, relativePath));
+  assert.ok(info.size > 500, `${relativePath} must be a real diagram`);
+  const diagram = await readFile(path.join(repositoryRoot, relativePath), 'utf8');
+  assert.match(diagram, /url\(#glass\)/, `${relativePath} must use the shared frosted-glass surface`);
+  assert.match(diagram, /#c5a875/, `${relativePath} must use the shared bronze palette`);
+  assert.doesNotMatch(diagram, /#7dd3fc|#a5b4fc|#818cf8|#c084fc|#38bdf8/, `${relativePath} contains stale blue AI styling`);
+}
+
 const archivePlate = await readFile(path.join(repositoryRoot, 'assets/source/hero-master.png'));
 const compatibilityPlate = await readFile(path.join(repositoryRoot, 'assets/source/poster-master.png'));
 assert.equal(archivePlate.equals(compatibilityPlate), true, 'Source masters must be identical Archive Plates');
@@ -71,6 +89,11 @@ for (const readmeName of ['README.md', 'README.zh-CN.md']) {
   for (const relativeLink of relativeLinks) {
     await access(path.resolve(repositoryRoot, relativeLink));
   }
+  const images = [...readme.matchAll(/<img src="([^"]+)"/g)].map((match) => match[1]);
+  assert.equal(images.filter((image) => image === './assets/hero.png').length, 1, `${readmeName} must show the primary plate once`);
+  assert.equal(images.filter((image) => /poster|social-card|demo|teaser/.test(image)).length, 0, `${readmeName} must not repeat plate variants`);
+  assert.equal(images.filter((image) => image.includes('./assets/diagrams/')).length, 6, `${readmeName} must show six unique diagrams`);
+  assert.equal(new Set(images).size, images.length, `${readmeName} must not repeat a visual element`);
 }
 
 const requiredSkillSections = [
@@ -112,6 +135,7 @@ process.stdout.write([
   `Atomic observations: ${observations.length}`,
   `Behavior claims: ${claimLedger.claims.length}`,
   `Runtime characters: ${runtime.length}/7000`,
+  `Diagrams: ${diagramPaths.length}`,
   `Source fingerprint: ${fingerprint.sourceFingerprint}`,
   '',
 ].join('\n'));

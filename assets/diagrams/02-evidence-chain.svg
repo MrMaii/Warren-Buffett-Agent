@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">The method is compiled from evidence, not borrowed from a reputation</title>
+  <desc id="desc">方法从证据逐层编译，而不是借用名声临场表演</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#171411"/>
+      <stop offset=".52" stop-color="#302a22"/>
+      <stop offset="1" stop-color="#1f1b17"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#625747" stop-opacity=".58"/>
+      <stop offset=".48" stop-color="#332c24" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#191612" stop-opacity=".84"/>
+    </linearGradient>
+    <linearGradient id="glass-light" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eadcc2" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#bfa77b" stop-opacity=".86"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f1e6cf"/>
+      <stop offset=".5" stop-color="#c5a875"/>
+      <stop offset="1" stop-color="#6e5a41"/>
+    </linearGradient>
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" seed="19" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="grain"/>
+      <feComponentTransfer in="grain">
+        <feFuncA type="table" tableValues="0 .18"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="grain" mode="screen"/>
+    </filter>
+    <filter id="soft-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#c5a875"/>
+    </marker>
+  </defs>
+  <rect width="1400" height="820" rx="26" fill="url(#bg)"/>
+  <rect x="24" y="24" width="1352" height="772" rx="20" fill="none" stroke="url(#edge)" stroke-width="1.8" stroke-opacity=".72"/>
+  <path d="M48 86V48H86M1314 48H1352V86M48 734V772H86M1314 772H1352V734" fill="none" stroke="#eadcc2" stroke-opacity=".52" stroke-width="1.4"/>
+  <rect width="1400" height="820" rx="26" fill="#eadcc2" opacity=".12" filter="url(#grain)"/>
+  <text x="70" y="52" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="15" font-weight="500" letter-spacing="2.4">HALL OF FAME STUDIO  /  AGENT 002  /  WARREN BUFFETT</text><text x="70" y="94" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="31" font-weight="700">The method is compiled from evidence, not borrowed from a reputation</text><text x="70" y="127" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="18" font-weight="400">方法从证据逐层编译，而不是借用名声临场表演</text>
+  <rect x="70" y="185" width="370" height="170" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.6" stroke-opacity=".78"/><rect x="79" y="194" width="352" height="152" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><text x="100" y="221" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="600" letter-spacing="1.5">01 · SOURCE</text><text x="100" y="279" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="38" font-weight="700">46</text><text x="275" y="271" fill="#f0e5cf" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="17" font-weight="400">documented records</text><text x="275" y="301" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="400">documented-real-person</text><path d="M450 270 L488 270" fill="none" stroke="#c5a875" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="500" y="185" width="370" height="170" rx="22" fill="url(#glass)" stroke="#c5a875" stroke-width="1.6" stroke-opacity=".78"/><rect x="509" y="194" width="352" height="152" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><text x="530" y="221" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="600" letter-spacing="1.5">02 · OBSERVE</text><text x="530" y="279" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="38" font-weight="700">56</text><text x="705" y="271" fill="#f0e5cf" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="17" font-weight="400">atomic moments</text><text x="705" y="301" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="400">different contexts</text><path d="M880 270 L918 270" fill="none" stroke="#c5a875" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="930" y="185" width="370" height="170" rx="22" fill="url(#glass)" stroke="#c5a875" stroke-width="1.6" stroke-opacity=".78"/><rect x="939" y="194" width="352" height="152" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><text x="960" y="221" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="600" letter-spacing="1.5">03 · CLAIM</text><text x="960" y="279" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="38" font-weight="700">11</text><text x="1135" y="271" fill="#f0e5cf" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="17" font-weight="400">bounded claims</text><text x="1135" y="301" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="400">counterevidence included</text><path d="M1115 365 L1115 413" fill="none" stroke="#c5a875" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="70" y="425" width="370" height="170" rx="22" fill="url(#glass)" stroke="#c5a875" stroke-width="1.6" stroke-opacity=".78"/><rect x="79" y="434" width="352" height="152" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><text x="100" y="461" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="600" letter-spacing="1.5">04 · RUNTIME</text><text x="100" y="519" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="38" font-weight="700">Rules</text><text x="275" y="511" fill="#f0e5cf" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="17" font-weight="400">modes + restraints</text><text x="275" y="541" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="400">method and shadow</text><path d="M450 510 L488 510" fill="none" stroke="#c5a875" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="500" y="425" width="370" height="170" rx="22" fill="url(#glass)" stroke="#c5a875" stroke-width="1.6" stroke-opacity=".78"/><rect x="509" y="434" width="352" height="152" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><text x="530" y="461" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="600" letter-spacing="1.5">05 · TEST</text><text x="530" y="519" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="38" font-weight="700">12</text><text x="705" y="511" fill="#f0e5cf" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="17" font-weight="400">package checks</text><text x="705" y="541" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="400">offline contract suite</text><path d="M880 510 L918 510" fill="none" stroke="#c5a875" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow)"/><rect x="930" y="425" width="370" height="170" rx="22" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.6" stroke-opacity=".78"/><rect x="939" y="434" width="352" height="152" rx="16" fill="none" stroke="#eadcc2" stroke-opacity=".12"/><text x="960" y="461" fill="#c5a875" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="600" letter-spacing="1.5">06 · OBSERVE</text><text x="960" y="519" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="32" font-weight="700">Behavior</text><text x="1135" y="511" fill="#f0e5cf" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="17" font-weight="400">decision behavior</text><text x="1135" y="541" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="400">reviewable outputs</text><text x="70" y="660" fill="#f0e5cf" font-family="Georgia,'Times New Roman','Microsoft YaHei',serif" font-size="19" font-weight="600">A missing fact stays missing; it never becomes a confident transaction.</text><text x="70" y="697" fill="#b9aa8f" font-family="'Segoe UI','Microsoft YaHei',sans-serif" font-size="16" font-weight="400">缺失的事实保持缺失，不会被包装成自信的交易结论。</text>
+  <text x="70" y="787" fill="#b9aa8f" font-family="Consolas,'Courier New',monospace" font-size="14" font-weight="400" letter-spacing="1.1">SOURCE → OBSERVATION → CLAIM → RUNTIME RULE → TEST → OBSERVED BEHAVIOR</text>
+</svg>

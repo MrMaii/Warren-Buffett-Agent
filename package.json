@@ -30,6 +30,7 @@
     "fingerprint": "node scripts/fingerprint.mjs",
     "check:response": "node scripts/check-response.mjs",
     "media:build": "python scripts/build-media.py",
+    "diagrams:build": "python scripts/build-diagrams.py",
     "test": "node --test agent/tests/qualityGate.test.mjs tests/package.test.mjs"
   }
 }

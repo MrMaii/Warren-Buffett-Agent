@@ -1,0 +1,4 @@
+interface:
+  display_name: "Communicate with Owner Candor"
+  short_description: "Write candid owner-to-owner decisions and reporting"
+  default_prompt: "Use $communicate-with-owner-candor to write an owner-to-owner decision memo or shareholder letter."

@@ -1,39 +1,60 @@
-# Warren Buffett Deep Agent
+# Warren Buffett Agent
+
+<p align="center"><a href="./README.zh-CN.md">简体中文</a></p>
 
 <p align="center">
-  <img src="./assets/hero.png" alt="Warren Buffett / Hall of Fame Studio Agent-002 Archive Plate" width="100%">
+  <img src="./assets/install.gif" alt="Install Warren Buffett Agent in any Agent Skills-compatible host" width="100%">
 </p>
 
-<p align="center">
-  <a href="./README.zh-CN.md">简体中文</a>
-  ·
-  <a href="./docs/QUALIFICATION.md">Qualification evidence</a>
-  ·
-  <a href="./assets/README.md">Visual system</a>
-  ·
-  <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">Hall of Fame Studio</a>
-</p>
+## Paste into your Agent
 
-<p align="center">
-  <img alt="Status: repository-prequalified" src="https://img.shields.io/badge/status-repository--prequalified-2a2118?style=flat-square">
-  <img alt="12 dedicated Skills" src="https://img.shields.io/badge/dedicated_Skills-12-8d6f3e?style=flat-square">
-  <img alt="46 registered sources" src="https://img.shields.io/badge/registered_sources-46-6b5a42?style=flat-square">
-  <img alt="Apache 2.0 license" src="https://img.shields.io/badge/license-Apache--2.0-302a23?style=flat-square">
-</p>
+```text
+Install MrMaii/Warren-Buffett-Agent as a user-level Agent Skill for this agent. Inspect it first, use the matching host, and verify it is available.
+```
 
-> Not a quote bot. Not a stock picker. Not an oracle.
-> An evidence-grounded **Long-Term Owner and Capital Allocation Partner**.
+Paste that sentence into the Agent you already use. It can inspect the public
+repository, select the matching Agent Skills host, install at user scope, and
+verify availability. Start a new chat after installation.
 
-This is the standalone, open-source distribution of the Warren Buffett Agent
-created inside [Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio).
-The public figure is the historical subject; the product is a decision system
-for evidence, owner orientation, opportunity cost, survival, candor, and revision.
+Works with Agent Skills-compatible hosts including GitHub Copilot, Claude Code,
+Cursor, Codex, Gemini CLI, OpenCode, Windsurf, and Cline.
 
-The Agent turns haste, social pressure, and undifferentiated fear into a calmer
-view of what is known, what can cause permanent damage, what remains reversible,
-and what the next-best use of capital, time, or attention would be. It does not
-claim to reproduce Warren Buffett, represent him, know his current holdings, or
-provide official financial advice.
+<details>
+<summary>Deterministic CLI fallback</summary>
+
+```bash
+gh skill preview MrMaii/Warren-Buffett-Agent warren-buffett-agent
+gh skill install MrMaii/Warren-Buffett-Agent warren-buffett-agent --agent <host> --scope user
+```
+
+Use a supported host ID such as `github-copilot`, `claude-code`, `cursor`,
+`codex`, `gemini-cli`, `opencode`, `windsurf`, or `cline`.
+</details>
+
+First use:
+
+```text
+We can acquire a smaller competitor, but it would consume most of our cash. Separate the business case from the pressure to act. Show the permanent-loss paths, reversible alternatives, and next-best use of the capital.
+```
+
+> **Status:** `repository-prequalified`; not yet Director-qualified. This is an
+> independent, evidence-grounded decision Agent—not Warren Buffett, not a
+> Berkshire Hathaway endorsement, and not financial advice.
+
+## What this Agent is
+
+> Not a quote bot. Not a stock picker. Not an oracle. An evidence-grounded
+> **Long-Term Owner and Capital Allocation Partner**.
+
+This standalone open-source Agent was created inside
+[Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio). The public
+figure is the historical subject; the product is a decision system for evidence,
+owner orientation, opportunity cost, survival, candor, and revision.
+
+It turns haste, social pressure, and undifferentiated fear into a calmer view of
+what is known, what can cause permanent damage, what remains reversible, and the
+next-best use of capital, time, or attention. It does not claim to reproduce or
+represent Warren Buffett, know his current holdings, or provide official advice.
 
 ## At a glance
 
@@ -44,11 +65,10 @@ provide official financial advice.
 | Evidence profile | 46 registered sources · 56 atomic observations · 11 behavior claims |
 | Callable surface | 12 dedicated Skills · four interaction modes |
 | Qualification | <code>repository-prequalified</code>; Director verdict remains open |
-| Visual language | One reviewed 3:2 Archive Plate and one shared frosted-glass diagram system |
+| Visual language | Editorial Prompt install motion · one reviewed 3:2 Archive Plate · shared frosted-glass diagrams |
 
-The repository includes restrained motion studies for distribution surfaces,
-but this README presents the reviewed primary plate once. The artwork preserves
-the approved composition; it does not simulate a live model transcript.
+The install motion teaches setup. The reviewed Archive Plate appears once as
+identity artwork; neither surface simulates a live model transcript.
 
 ## The operating promise
 
@@ -132,33 +152,15 @@ The quality gate catches:
 Specific securities, large financial commitments, or other high-stakes decisions
 require dated primary evidence, downside analysis, and appropriate human review.
 
-## Three-minute start
+## Identity and visual system
 
-### 1. Install it as a Codex Skill
+<p align="center">
+  <img src="./assets/hero.png" alt="Warren Buffett / Hall of Fame Studio Agent-002 Archive Plate" width="100%">
+</p>
 
-PowerShell:
-
-<pre><code>git clone https://github.com/MrMaii/Warren-Buffett-Agent.git "$env:USERPROFILE\.codex\skills\warren-buffett-agent"</code></pre>
-
-macOS or Linux:
-
-<pre><code>git clone https://github.com/MrMaii/Warren-Buffett-Agent.git ~/.codex/skills/warren-buffett-agent</code></pre>
-
-### 2. Start with the decision—not the celebrity
-
-<pre><code>$warren-buffett-agent
-
-We can acquire a smaller competitor, but it would consume most of our cash.
-Separate the business case from the pressure to act. Show me the permanent-loss
-paths, the reversible alternatives, and the next-best use of the capital.</code></pre>
-
-### 3. Ask for a named artifact when the work is concrete
-
-<pre><code>$warren-buffett-agent
-
-Use $weigh-opportunity-cost. Compare hiring a sales team, rebuilding onboarding,
-and keeping the cash. Return an Opportunity Cost Ledger with the winner, the
-next-best alternative, assumptions that could reverse the choice, and a review date.</code></pre>
+The reviewed `3:2` Archive Plate carries the Agent identity. The installation
+motion explains setup; the plate does not simulate a live model transcript.
+See the [visual system and provenance](./assets/README.md).
 
 ## Skill catalog
 
@@ -236,11 +238,13 @@ Inspect a draft locally:
 Node.js 20 or later is sufficient for runtime validation. Rebuilding the
 release media and diagrams additionally requires Python 3 and Pillow.
 
-<pre><code>npm run validate
+<pre><code>npm run bundle:build
+npm run validate
 npm run fingerprint
 npm run media:build
 npm run diagrams:build
-npm test</code></pre>
+npm test
+gh skill publish --dry-run</code></pre>
 
 Candidate source fingerprint:
 
@@ -283,7 +287,9 @@ one generic assistant.
 ## Repository map
 
 <pre><code>.
-├── SKILL.md                 # installable public entrypoint
+├── skills/warren-buffett-agent/ # installable user-level distribution
+│   ├── SKILL.md             # discoverable public entrypoint
+│   └── agent/               # generated mirror of agent/
 ├── agent/                   # exact repository-prequalified candidate
 │   ├── AGENT.md             # complete integration contract
 │   ├── RUNTIME.md           # compact conversation constitution
@@ -293,7 +299,7 @@ one generic assistant.
 │   ├── runtime/             # Buffett-specific quality gate
 │   ├── skills/              # 12 callable hard Skills
 │   └── tests/               # focused quality-gate tests
-├── assets/                  # Archive Plate, motion studies, and diagrams
+├── assets/                  # install motion, Archive Plate, and diagrams
 ├── docs/                    # architecture, qualification, Studio context
 ├── scripts/                 # validation, fingerprint, media, and diagram tools
 └── tests/                   # public-package contracts</code></pre>

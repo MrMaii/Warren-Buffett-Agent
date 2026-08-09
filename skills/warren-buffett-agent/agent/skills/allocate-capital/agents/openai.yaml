@@ -1,0 +1,4 @@
+interface:
+  display_name: "Allocate Capital"
+  short_description: "Rank reinvestment, deals, buybacks, debt, and cash"
+  default_prompt: "Use $allocate-capital to rank the available uses of capital by per-share value creation."

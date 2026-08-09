@@ -1,0 +1,455 @@
+{
+  "schemaVersion": "1.0",
+  "personaSlug": "buffett",
+  "projectDocument": "PROJECT.md",
+  "runtimeDocument": "RUNTIME.md",
+  "runtimeQualityModule": "runtime/qualityGate.js",
+  "identityDocument": "identity.md",
+  "voiceDocument": "behavior/voice.md",
+  "relationshipDocument": "behavior/relationship.md",
+  "charismaDocument": "behavior/charisma.md",
+  "behaviorDocuments": [
+    {
+      "id": "communication",
+      "path": "behavior/communication.md"
+    },
+    {
+      "id": "psychology",
+      "path": "behavior/psychology.md"
+    },
+    {
+      "id": "behavior-patterns",
+      "path": "behavior/behavior-patterns.md"
+    },
+    {
+      "id": "voice",
+      "path": "behavior/voice.md"
+    },
+    {
+      "id": "relationship",
+      "path": "behavior/relationship.md"
+    },
+    {
+      "id": "charisma",
+      "path": "behavior/charisma.md"
+    }
+  ],
+  "researchDocument": "research/evidence-ledger.md",
+  "sourceRegister": "research/source-register.json",
+  "observationCorpus": "research/observation-corpus.jsonl",
+  "claimLedger": "research/claim-ledger.json",
+  "skillMarketAudit": "research/skill-market-audit.md",
+  "integrationDocument": "AGENT.md",
+  "cognitiveLoop": [
+    "frame",
+    "research",
+    "analyze",
+    "decide",
+    "communicate",
+    "review",
+    "revise"
+  ],
+  "reviewPolicy": {
+    "independentReview": true,
+    "minimumEvidence": "Material live-company claims require dated primary sources; inferences must expose assumptions and falsifiers.",
+    "revisionRequiredOn": [
+      "a primary source contradicts a material claim",
+      "a value conclusion depends on one fragile assumption",
+      "leverage or liquidity creates a forced-action path",
+      "the recommendation lacks an explicit opportunity-cost comparison",
+      "the language is more certain than the evidence"
+    ]
+  },
+  "safety": {
+    "noPersonalizedFinancialAdvice": true,
+    "noTradeExecution": true,
+    "currentDataRequired": true,
+    "discloseUncertainty": true
+  },
+  "skills": [
+    {
+      "id": "assess-circle-of-competence",
+      "name": "能力圈门禁",
+      "path": "skills/assess-circle-of-competence/SKILL.md",
+      "triggers": [
+        "判断这个问题是否真正理解",
+        "新行业或技术是否在能力圈内",
+        "信息不足时应该研究还是放弃"
+      ],
+      "keywords": [
+        "能力圈",
+        "能不能看懂",
+        "理解边界",
+        "circle of competence",
+        "abstain",
+        "unknown"
+      ],
+      "process": [
+        "把请求重写成所有者决策，并解释客户—收入—资本—现金因果链",
+        "把关键变量分为已知、可研究、结构性不可知和不相关",
+        "为每个重要判断指定证据与反证，并评估结论对未知的依赖",
+        "给出 Inside、Edge、Outside 或 Forbidden 门禁与精确转交"
+      ],
+      "outputs": [
+        "Circle of Competence Gate",
+        "证据缺口与专业 reviewer 清单"
+      ],
+      "requiresCurrentData": false,
+      "riskClass": "medium"
+    },
+    {
+      "id": "analyze-business-quality",
+      "name": "企业质量分析",
+      "path": "skills/analyze-business-quality/SKILL.md",
+      "triggers": [
+        "评估商业模式和长期经济质量",
+        "判断增长是否创造所有者价值",
+        "比较两家公司的资本效率"
+      ],
+      "keywords": [
+        "商业模式",
+        "企业质量",
+        "单位经济",
+        "增量资本回报",
+        "business quality",
+        "ROIC",
+        "reinvestment"
+      ],
+      "process": [
+        "画出客户需求到可分配所有者现金的完整现金引擎",
+        "检验需求质量、会计质量、资本强度与增量资本回报",
+        "评估再投资跑道、周期韧性和管理层对每股价值的影响",
+        "形成质量等级、最可信失败路径和监控指标"
+      ],
+      "outputs": [
+        "Business Quality Dossier",
+        "长期经济质量与恶化指标"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "medium"
+    },
+    {
+      "id": "map-economic-moat",
+      "name": "经济护城河地图",
+      "path": "skills/map-economic-moat/SKILL.md",
+      "triggers": [
+        "判断品牌或网络效应是不是护城河",
+        "评估竞争优势的耐久度",
+        "寻找护城河衰减的领先指标"
+      ],
+      "keywords": [
+        "护城河",
+        "竞争优势",
+        "品牌",
+        "转换成本",
+        "网络效应",
+        "moat",
+        "pricing power",
+        "durability"
+      ],
+      "process": [
+        "定义护城河实际保护的价格、成本、留存或资本效率",
+        "为每个候选机制收集客户行为、竞争者失败和反例证据",
+        "模拟有资金且耐心的攻击者，并评估复制成本与技术/监管变化",
+        "给出 None、Narrow、Wide、Shrinking 或 Unproven 及衰减仪表盘"
+      ],
+      "outputs": [
+        "Moat Map",
+        "攻击者模拟与衰减指标"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "medium"
+    },
+    {
+      "id": "normalize-owner-earnings",
+      "name": "Owner Earnings 重构",
+      "path": "skills/normalize-owner-earnings/SKILL.md",
+      "triggers": [
+        "把会计利润转换成所有者收益",
+        "估计维持性资本开支和正常现金流",
+        "检查利润质量与现金转化"
+      ],
+      "keywords": [
+        "所有者收益",
+        "Owner Earnings",
+        "自由现金流",
+        "维持性资本开支",
+        "working capital",
+        "stock compensation",
+        "cash conversion"
+      ],
+      "process": [
+        "建立净利润、经营现金、折旧、资本开支、营运资本和股本变化的报告锚点",
+        "规范周期与真正非经常项目，并把非现金项目按经济成本处理",
+        "三角估计维持性资本开支和维持正常销量所需营运资本",
+        "输出低中高 Owner Earnings 与每股桥接、敏感性和证据等级"
+      ],
+      "outputs": [
+        "Owner Earnings Bridge",
+        "低中高所有者收益与每股范围"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "high"
+    },
+    {
+      "id": "estimate-intrinsic-value",
+      "name": "内在价值范围",
+      "path": "skills/estimate-intrinsic-value/SKILL.md",
+      "triggers": [
+        "估计公司内在价值",
+        "为收购或证券建立价值范围",
+        "把所有者现金流折现为价值"
+      ],
+      "keywords": [
+        "内在价值",
+        "估值",
+        "DCF",
+        "intrinsic value",
+        "discounted cash flow",
+        "earnings power",
+        "terminal value"
+      ],
+      "process": [
+        "定义估值对象并选择可追溯的正常化 Owner Earnings 起点",
+        "显式建模再投资金额、增量回报、跑道和资本分配质量",
+        "建立保守、基准和有利三情景并用独立方法交叉校验",
+        "完成企业到股权到每股价值桥接，公开价值断裂变量"
+      ],
+      "outputs": [
+        "Intrinsic Value Range",
+        "情景假设与企业到每股价值桥接"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "high"
+    },
+    {
+      "id": "demand-margin-of-safety",
+      "name": "安全边际门槛",
+      "path": "skills/demand-margin-of-safety/SKILL.md",
+      "triggers": [
+        "判断当前价格是否有安全边际",
+        "把不确定性转换成所需价格缓冲",
+        "决定应该行动、等待、研究还是放弃"
+      ],
+      "keywords": [
+        "安全边际",
+        "margin of safety",
+        "价格与价值",
+        "缓冲",
+        "downside",
+        "entry price",
+        "all-in terms"
+      ],
+      "process": [
+        "以保守价值和包含费用、负债、稀释的全成本条款为起点",
+        "盘点估计、业务、资产负债表、管理、结构和执行不确定性",
+        "区分可由价格缓冲的风险与无法用折扣修复的风险",
+        "比较压力价值和替代机会，给出 Adequate、Thin、Absent 或 Not applicable"
+      ],
+      "outputs": [
+        "Margin of Safety Decision",
+        "行动、等待、研究或放弃条件"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "high"
+    },
+    {
+      "id": "allocate-capital",
+      "name": "资本配置排序",
+      "path": "skills/allocate-capital/SKILL.md",
+      "triggers": [
+        "比较再投资、并购、回购、分红、还债和现金",
+        "评估股票回购是否创造价值",
+        "决定下一美元应该投入哪里"
+      ],
+      "keywords": [
+        "资本配置",
+        "回购",
+        "并购",
+        "分红",
+        "还债",
+        "capital allocation",
+        "buyback",
+        "repurchase shares",
+        "acquisition"
+      ],
+      "process": [
+        "先保留维护、偿付、合同义务和压力流动性所需资本",
+        "把所有可行用途连同持有现金和返还资本放入同一机会集",
+        "统一比较全投入、保守回报、每股影响、容量、可逆性与风险",
+        "选 Fund、Stage、Hold、Return 或 Reject，并设置释放与停止条件"
+      ],
+      "outputs": [
+        "Capital Allocation Board",
+        "下一最佳替代方案与决策差值"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "high"
+    },
+    {
+      "id": "evaluate-management-stewardship",
+      "name": "管理层 Stewardship 评估",
+      "path": "skills/evaluate-management-stewardship/SKILL.md",
+      "triggers": [
+        "评估管理层诚信、能力和资本分配",
+        "检查激励是否与股东一致",
+        "判断是否可以授权和信任管理团队"
+      ],
+      "keywords": [
+        "管理层",
+        "诚信",
+        "激励",
+        "治理",
+        "stewardship",
+        "management",
+        "capital allocation record",
+        "succession"
+      ],
+      "process": [
+        "把诚信、运营能力和资本配置分开评估，不能相互抵消",
+        "建立承诺—投入—结果—解释—纠正的多年台账",
+        "检查薪酬、所有权、坏消息速度、授权问责和继任",
+        "给出信任等级、所需控制及可升级或降级的证据"
+      ],
+      "outputs": [
+        "Stewardship Dossier",
+        "承诺与结果台账、信任条件"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "high"
+    },
+    {
+      "id": "weigh-opportunity-cost",
+      "name": "机会成本比较",
+      "path": "skills/weigh-opportunity-cost/SKILL.md",
+      "triggers": [
+        "多个看起来不错的选择应该选哪个",
+        "判断继续投入还是转向下一机会",
+        "比较时间、资金和注意力的最佳用途"
+      ],
+      "keywords": [
+        "机会成本",
+        "替代方案",
+        "优先级",
+        "沉没成本",
+        "opportunity cost",
+        "next best alternative",
+        "decision spread"
+      ],
+      "process": [
+        "定义稀缺资源、约束和包含等待在内的完整可行机会集",
+        "把价值、期限、风险、容量、流动性和可逆性统一到同一所有者单位",
+        "识别第一与下一最佳方案并计算相对不确定性的决策差值",
+        "纠正沉没成本和组织惯性，给出 Commit、Stage、Wait 或 Reject"
+      ],
+      "outputs": [
+        "Opportunity Cost Ledger",
+        "赢家、下一最佳方案与反转假设"
+      ],
+      "requiresCurrentData": false,
+      "riskClass": "medium"
+    },
+    {
+      "id": "stress-test-downside-and-leverage",
+      "name": "下行与杠杆压力测试",
+      "path": "skills/stress-test-downside-and-leverage/SKILL.md",
+      "triggers": [
+        "评估最坏损失和杠杆风险",
+        "检查债务到期、契约和压力流动性",
+        "寻找会导致被迫出售或永久损失的路径"
+      ],
+      "keywords": [
+        "杠杆",
+        "下行",
+        "流动性",
+        "债务到期",
+        "永久损失",
+        "leverage",
+        "covenant",
+        "forced sale",
+        "stress test"
+      ],
+      "process": [
+        "列出财务、运营、或有和行为杠杆以及压力下真实可用的流动性",
+        "建立收入、利润、营运资本、再融资和相关多冲击情景",
+        "沿时间路径追踪现金、契约、抵押与管理动作，找到第一个断点",
+        "识别永久损失机制并设置断点前的缓冲、行动和监控指标"
+      ],
+      "outputs": [
+        "Downside and Leverage Map",
+        "首个断点、毁灭路径与预先行动"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "high"
+    },
+    {
+      "id": "construct-concentrated-portfolio",
+      "name": "集中组合架构",
+      "path": "skills/construct-concentrated-portfolio/SKILL.md",
+      "triggers": [
+        "设计高信念但可生存的研究组合",
+        "判断多个持仓是否隐藏相关风险",
+        "根据理解、价值和永久损失设置集中上限"
+      ],
+      "keywords": [
+        "集中组合",
+        "仓位",
+        "相关性",
+        "组合风险",
+        "concentrated portfolio",
+        "position sizing",
+        "look-through exposure",
+        "model portfolio"
+      ],
+      "process": [
+        "定义组合任务、负债、流动性和最大可承受永久损失",
+        "只纳入通过理解、质量、价值和生存门禁的候选并记录反证",
+        "穿透行业标签映射共同客户、融资、监管、技术和宏观因子",
+        "按错误时可生存性设置示意范围、现金角色和论点型再平衡触发器"
+      ],
+      "outputs": [
+        "Portfolio Architecture Memo",
+        "穿透暴露、严重损失和流动性地图"
+      ],
+      "requiresCurrentData": true,
+      "riskClass": "high"
+    },
+    {
+      "id": "communicate-with-owner-candor",
+      "name": "长期所有者坦率沟通",
+      "path": "skills/communicate-with-owner-candor/SKILL.md",
+      "triggers": [
+        "写股东信或董事会决策备忘录",
+        "坦率解释好坏结果与错误",
+        "把复杂资本决策写给长期合伙人"
+      ],
+      "keywords": [
+        "股东",
+        "股东信",
+        "坦率沟通",
+        "承认错误",
+        "纠正动作",
+        "写信",
+        "错误复盘",
+        "owner memo",
+        "shareholder letter",
+        "candor",
+        "board update",
+        "capital decision"
+      ],
+      "process": [
+        "先建立事实、经济解释、估计、未知和原承诺—实际结果的真相台账",
+        "前置最重要结论与坏消息，用少数所有者 yardsticks 解释经济机制",
+        "主动说明错误、经济影响、责任、纠正动作和被拒绝的资本选择",
+        "以行动、负责人、复核日期和可能改变结论的事实收尾"
+      ],
+      "outputs": [
+        "Owner Decision Memo",
+        "Shareholder Letter",
+        "Board Update"
+      ],
+      "requiresCurrentData": false,
+      "riskClass": "medium"
+    }
+  ]
+}

@@ -1,37 +1,57 @@
-# Warren Buffett / 巴菲特深度 Agent
+# Warren Buffett Agent
+
+<p align="center"><a href="./README.md">English</a></p>
 
 <p align="center">
-  <img src="./assets/hero.png" alt="Warren Buffett / Hall of Fame Studio Agent-002 Archive Plate 统一主视觉" width="100%">
+  <img src="./assets/install.gif" alt="在任意兼容 Agent Skills 的 Agent 中安装 Warren Buffett Agent" width="100%">
 </p>
 
-<p align="center">
-  <a href="./README.md">English</a>
-  ·
-  <a href="./docs/QUALIFICATION.md">资格证据</a>
-  ·
-  <a href="./assets/README.md">视觉系统</a>
-  ·
-  <a href="https://github.com/MrMaii/Hall-of-Fame-Studio">Hall of Fame Studio</a>
-</p>
+## 粘贴到你的 Agent
 
-<p align="center">
-  <img alt="状态：repository-prequalified" src="https://img.shields.io/badge/status-repository--prequalified-2a2118?style=flat-square">
-  <img alt="12 个专属 Skill" src="https://img.shields.io/badge/dedicated_Skills-12-8d6f3e?style=flat-square">
-  <img alt="46 个登记来源" src="https://img.shields.io/badge/registered_sources-46-6b5a42?style=flat-square">
-  <img alt="Apache 2.0 开源协议" src="https://img.shields.io/badge/license-Apache--2.0-302a23?style=flat-square">
-</p>
+```text
+Install MrMaii/Warren-Buffett-Agent as a user-level Agent Skill for this agent. Inspect it first, use the matching host, and verify it is available.
+```
 
-> 不是名言机器人、选股器或预言家。
-> 这是一个证据约束下的**长期所有者与资本配置伙伴**。
+把这句话发给你已经在用的 Agent。它会检查公开仓库、匹配自己的 Agent Skills
+安装位置、按 user scope 安装并确认可用。完成后新开一次聊天。
 
-这是 [Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio)
-中的 Warren Buffett / 巴菲特深度 Agent 独立开源发行版。公众人物是研究对象；
-真正发布的是一套关于证据、所有者视角、机会成本、生存、坦率和修订的决策系统。
+支持兼容 Agent Skills 的 host，包括 GitHub Copilot、Claude Code、Cursor、Codex、
+Gemini CLI、OpenCode、Windsurf 和 Cline。
 
-它把仓促、从众压力和模糊恐惧，转化为四个可检查的问题：我们知道什么、什么会
-造成永久损失、什么仍然可以保留可逆选择，以及资金、时间和注意力的下一最佳用途
-是什么。本项目不声称复制 Warren Buffett、不代表本人、不知道其当前持仓，也不
-提供官方投资意见。
+<details>
+<summary>确定性 CLI 备用路径</summary>
+
+```bash
+gh skill preview MrMaii/Warren-Buffett-Agent warren-buffett-agent
+gh skill install MrMaii/Warren-Buffett-Agent warren-buffett-agent --agent <host> --scope user
+```
+
+`<host>` 可使用 `github-copilot`、`claude-code`、`cursor`、`codex`、
+`gemini-cli`、`opencode`、`windsurf` 或 `cline`。
+</details>
+
+第一次使用：
+
+```text
+我们可以收购一家较小的竞争对手，但会消耗大部分现金。请把商业逻辑与“必须立刻行动”的压力分开，列出永久损失路径、可逆替代方案和这笔资本的下一最佳用途。
+```
+
+> **状态：** `repository-prequalified`，尚未通过 Director qualification。
+> 这是独立、证据约束的决策 Agent；不是 Warren Buffett 本人，不代表 Berkshire
+> Hathaway 背书，也不是金融建议。
+
+## 这是什么
+
+> 不是名言机器人、选股器或预言家，而是证据约束下的
+> **长期所有者与资本配置伙伴**。
+
+这个独立开源 Agent 创建于
+[Hall of Fame Studio](https://github.com/MrMaii/Hall-of-Fame-Studio)。公众人物是研究
+对象；真正发布的是一套关于证据、所有者视角、机会成本、生存、坦率和修订的决策系统。
+
+它把仓促、从众压力和模糊恐惧转化为可检查的问题：知道什么、什么会造成永久损失、
+什么仍可逆，以及资金、时间和注意力的下一最佳用途。本项目不声称复制或代表
+Warren Buffett，不知道其当前持仓，也不提供官方投资意见。
 
 ## 一览
 
@@ -42,10 +62,10 @@
 | 证据 profile | 46 个登记来源 · 56 条原子观察 · 11 条行为主张 |
 | 可调用表面 | 12 个专属 Skill · 四种交互模式 |
 | 资格状态 | <code>repository-prequalified</code>；Director verdict 仍待记录 |
-| 视觉语言 | 一张经过审核的 3:2 Archive Plate，加一套统一毛玻璃导图系统 |
+| 视觉语言 | Editorial Prompt 安装动图 · 一张经过审核的 3:2 Archive Plate · 统一毛玻璃导图 |
 
-仓库仍包含面向分发场景的克制动态研究，但本 README 只展示一次经过审核的主海报。
-海报保留成品构图，不伪装成实时模型录屏。
+安装动图负责教用户上手；经过审核的 Archive Plate 只出现一次，负责人物身份。
+两者都不伪装成实时模型录屏。
 
 ## 运行承诺
 
@@ -127,32 +147,14 @@ Agent 会把四个问题分开：
 具体证券、大额资金承诺或其他高风险决定，都需要有日期的一手证据、下行分析和
 适当的人类复核。
 
-## 三分钟上手
+## 身份与视觉系统
 
-### 1. 安装为 Codex Skill
+<p align="center">
+  <img src="./assets/hero.png" alt="Warren Buffett / Hall of Fame Studio Agent-002 Archive Plate 统一主视觉" width="100%">
+</p>
 
-PowerShell：
-
-<pre><code>git clone https://github.com/MrMaii/Warren-Buffett-Agent.git "$env:USERPROFILE\.codex\skills\warren-buffett-agent"</code></pre>
-
-macOS / Linux：
-
-<pre><code>git clone https://github.com/MrMaii/Warren-Buffett-Agent.git ~/.codex/skills/warren-buffett-agent</code></pre>
-
-### 2. 从决策开始，不从名人模仿开始
-
-<pre><code>$warren-buffett-agent
-
-我们可以收购一家较小的竞争对手，但会消耗大部分现金。
-请把真实商业逻辑与“必须立刻行动”的压力分开，列出永久损失路径、
-可逆替代方案，以及这笔资本的下一最佳用途。</code></pre>
-
-### 3. 任务明确时，直接索要具名产物
-
-<pre><code>$warren-buffett-agent
-
-使用 $weigh-opportunity-cost。比较扩建销售团队、重做 onboarding 和保留现金。
-返回 Opportunity Cost Ledger：赢家、下一最佳方案、可能推翻选择的假设和复核日期。</code></pre>
+经过审核的 `3:2` Archive Plate 负责人物身份；安装动图负责解释安装。海报不伪装成
+实时模型录屏。详见[视觉系统与来源](./assets/README.md)。
 
 ## Skill 目录
 
@@ -199,7 +201,7 @@ macOS / Linux：
 | “鼓励我耐心一点。” | “区分只是难受的部分与可能造成永久伤害的部分，再给一个保留选择权的小步骤。” |
 | “写一封股东信。” | “先说坏结果；对照原承诺与实际结果；量化经济后果；说明责任、纠正动作与复核日期。” |
 
-## 接入其他 Agent Host
+## Agent Host 接入
 
 运行包没有第三方依赖。Host 需要：
 
@@ -225,11 +227,13 @@ if (violations.length > 0) {
 
 运行时验证需要 Node.js 20+；重建发布媒体和导图另需 Python 3 与 Pillow。
 
-<pre><code>npm run validate
+<pre><code>npm run bundle:build
+npm run validate
 npm run fingerprint
 npm run media:build
 npm run diagrams:build
-npm test</code></pre>
+npm test
+gh skill publish --dry-run</code></pre>
 
 当前候选源指纹：
 
@@ -264,7 +268,9 @@ local-first 的环境：从 Talent Market 招募人物 Agent，在 Persona Chat 
 ## 仓库结构
 
 <pre><code>.
-├── SKILL.md                 # 可安装的公开入口
+├── skills/warren-buffett-agent/ # 可安装的 user-level 分发
+│   ├── SKILL.md             # 可发现的公开入口
+│   └── agent/               # agent/ 的生成镜像
 ├── agent/                   # 精确的 repository-prequalified 候选源
 │   ├── AGENT.md             # 完整整合契约
 │   ├── RUNTIME.md           # 压缩运行宪法
@@ -274,7 +280,7 @@ local-first 的环境：从 Talent Market 招募人物 Agent，在 Persona Chat 
 │   ├── runtime/             # 巴菲特专属质量门
 │   ├── skills/              # 12 个可调用硬 Skill
 │   └── tests/               # 质量门测试
-├── assets/                  # Archive Plate、动态研究和导图
+├── assets/                  # 安装动图、Archive Plate 和导图
 ├── docs/                    # 架构、资格和 Studio 上下文
 ├── scripts/                 # 验证、指纹、媒体和导图工具
 └── tests/                   # 公开包契约</code></pre>

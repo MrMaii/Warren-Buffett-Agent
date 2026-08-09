@@ -1,0 +1,376 @@
+{
+  "schemaVersion": "1.0",
+  "persona": "buffett",
+  "evidenceProfile": "documented-real-person",
+  "method": "Primary material first; independent observations are used to triangulate public behavior, not infer private motives.",
+  "sources": [
+    {
+      "id": "S001",
+      "title": "Berkshire Hathaway Owner's Manual",
+      "year": 1996,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/ownman.pdf",
+      "scope": "owner partnership, communication, capital, decentralization"
+    },
+    {
+      "id": "S002",
+      "title": "Berkshire Hathaway shareholder letter 2024",
+      "year": 2025,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2024ltr.pdf",
+      "scope": "mistakes, candor, praise and criticism, correction"
+    },
+    {
+      "id": "S003",
+      "title": "Berkshire Hathaway shareholder letter 2023",
+      "year": 2024,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2023ltr.pdf",
+      "scope": "partnership, permanence, temperament"
+    },
+    {
+      "id": "S004",
+      "title": "Berkshire Hathaway shareholder letter 2022",
+      "year": 2023,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2022ltr.pdf",
+      "scope": "shareholder audience, long horizon, trust"
+    },
+    {
+      "id": "S005",
+      "title": "Berkshire Hathaway shareholder letter 2021",
+      "year": 2022,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2021ltr.pdf",
+      "scope": "role reversal, trust, mistakes, business picking"
+    },
+    {
+      "id": "S006",
+      "title": "Berkshire Hathaway shareholder letter 2020",
+      "year": 2021,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2020ltr.pdf",
+      "scope": "owners, retained earnings, decentralization"
+    },
+    {
+      "id": "S007",
+      "title": "Berkshire Hathaway shareholder letter 2019",
+      "year": 2020,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2019ltr.pdf",
+      "scope": "long-run optimism, risk, capital"
+    },
+    {
+      "id": "S008",
+      "title": "Berkshire Hathaway shareholder letter 2018",
+      "year": 2019,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2018ltr.pdf",
+      "scope": "partner audience, communication, no short-term targets"
+    },
+    {
+      "id": "S009",
+      "title": "Berkshire Hathaway shareholder letter 2017",
+      "year": 2018,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2017ltr.pdf",
+      "scope": "bets, errors, America, incentives"
+    },
+    {
+      "id": "S010",
+      "title": "Berkshire Hathaway shareholder letter 2016",
+      "year": 2017,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2016ltr.pdf",
+      "scope": "management, acquisitions, repurchases"
+    },
+    {
+      "id": "S011",
+      "title": "Berkshire Hathaway shareholder letter 2015",
+      "year": 2016,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2015ltr.pdf",
+      "scope": "culture, succession, partnership"
+    },
+    {
+      "id": "S012",
+      "title": "Berkshire Hathaway shareholder letter 2014",
+      "year": 2015,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2014ltr.pdf",
+      "scope": "50-year retrospective, errors, temperament"
+    },
+    {
+      "id": "S013",
+      "title": "Berkshire Hathaway shareholder letter 2010",
+      "year": 2011,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2010ltr.pdf",
+      "scope": "trust, managers, capital, reputation"
+    },
+    {
+      "id": "S014",
+      "title": "Berkshire Hathaway shareholder letter 2009",
+      "year": 2010,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2009ltr.pdf",
+      "scope": "direct informative communication and crisis reflection"
+    },
+    {
+      "id": "S015",
+      "title": "Berkshire Hathaway shareholder letter 2002",
+      "year": 2003,
+      "kind": "primary",
+      "url": "https://www.berkshirehathaway.com/letters/2002pdf.pdf",
+      "scope": "derivatives, risk, business explanation"
+    },
+    {
+      "id": "S016",
+      "title": "1996 Berkshire Hathaway annual meeting",
+      "year": 1996,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/1996-berkshire-hathaway-annual-meeting/",
+      "scope": "technology, competence, fairness, investment principles"
+    },
+    {
+      "id": "S017",
+      "title": "Morning session — 1996 annual meeting",
+      "year": 1996,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/1996/05/06/morning-session---1996-berkshire-hathaway-annual-meeting.html",
+      "scope": "electronic encyclopedia exchange; self-deprecation plus substance"
+    },
+    {
+      "id": "S018",
+      "title": "1997 Berkshire Hathaway annual meeting",
+      "year": 1997,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/1997-berkshire-hathaway-annual-meeting/",
+      "scope": "mistakes of omission and learning"
+    },
+    {
+      "id": "S019",
+      "title": "2001 Berkshire Hathaway annual meeting",
+      "year": 2001,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2001-berkshire-hathaway-annual-meeting/",
+      "scope": "questions from young people, humor, markets"
+    },
+    {
+      "id": "S020",
+      "title": "2002 Berkshire Hathaway annual meeting",
+      "year": 2002,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2002-berkshire-hathaway-annual-meeting/",
+      "scope": "Dexter Shoe ownership of error, friendship"
+    },
+    {
+      "id": "S021",
+      "title": "2003 Berkshire Hathaway annual meeting",
+      "year": 2003,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2003-berkshire-hathaway-annual-meeting/",
+      "scope": "love, success, happiness, fretting, managers"
+    },
+    {
+      "id": "S022",
+      "title": "Morning session — 2003 annual meeting",
+      "year": 2003,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/2003/05/03/morning-session---2003-berkshire-hathaway-annual-meeting.html",
+      "scope": "lovability, money and meaning"
+    },
+    {
+      "id": "S023",
+      "title": "2007 Berkshire Hathaway annual meeting",
+      "year": 2007,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2007-berkshire-hathaway-annual-meeting/",
+      "scope": "trust, habits, young people, relationships"
+    },
+    {
+      "id": "S024",
+      "title": "2008 Berkshire Hathaway annual meeting",
+      "year": 2008,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2008-berkshire-hathaway-annual-meeting/",
+      "scope": "life advice, passion, marriage, happiness"
+    },
+    {
+      "id": "S025",
+      "title": "Buffett gives shareholders life advice",
+      "year": 2008,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/2008/05/03/buffett-gives-shareholders-life-advice.html",
+      "scope": "work, relationships, life choices"
+    },
+    {
+      "id": "S026",
+      "title": "2009 Berkshire Hathaway annual meeting",
+      "year": 2009,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2009-berkshire-hathaway-annual-meeting/",
+      "scope": "crisis, Irish bank mistake, uncertainty"
+    },
+    {
+      "id": "S027",
+      "title": "2010 Berkshire Hathaway annual meeting",
+      "year": 2010,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2010-berkshire-hathaway-annual-meeting/",
+      "scope": "reputation, responsibility, public challenge"
+    },
+    {
+      "id": "S028",
+      "title": "We won't trade reputation for money",
+      "year": 2010,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/2010/05/01/buffett-we-wont-trade-reputation-for-money.html",
+      "scope": "reputation boundary and communication"
+    },
+    {
+      "id": "S029",
+      "title": "2012 Berkshire Hathaway annual meeting",
+      "year": 2012,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2012-berkshire-hathaway-annual-meeting/",
+      "scope": "startup mistakes, survivability, health"
+    },
+    {
+      "id": "S030",
+      "title": "2014 Berkshire Hathaway annual meeting",
+      "year": 2014,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2014-berkshire-hathaway-annual-meeting/",
+      "scope": "critical questions, disagreement, self-deprecation"
+    },
+    {
+      "id": "S031",
+      "title": "2015 Berkshire Hathaway annual meeting",
+      "year": 2015,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2015-berkshire-hathaway-annual-meeting/",
+      "scope": "Dexter mistake, nobody misled him, accountability"
+    },
+    {
+      "id": "S032",
+      "title": "Buffett and Munger reveal the secrets of their friendship",
+      "year": 2016,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/2016/05/02/buffett-and-munger-reveal-the-secrets-of-their-friendship-full-interview-.html",
+      "scope": "long friendship, disagreement, admiration, humor"
+    },
+    {
+      "id": "S033",
+      "title": "2017 Berkshire Hathaway annual meeting",
+      "year": 2017,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2017-berkshire-hathaway-annual-meeting/",
+      "scope": "Google and Amazon omissions, admiration, learning"
+    },
+    {
+      "id": "S034",
+      "title": "I was wrong on IBM — full interview",
+      "year": 2017,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/2017/08/30/buffett-i-was-wrong-on-ibm-full-interview.html",
+      "scope": "plain ownership of a changed judgment"
+    },
+    {
+      "id": "S035",
+      "title": "I've lived a better life because of Charlie",
+      "year": 2018,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/2018/05/07/buffett-ive-lived-a-better-life-because-of-charlie-munger.html",
+      "scope": "gratitude, affection, partnership"
+    },
+    {
+      "id": "S036",
+      "title": "2019 Berkshire Hathaway annual meeting",
+      "year": 2019,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2019-berkshire-hathaway-annual-meeting/",
+      "scope": "child question, competence, humor, disagreement"
+    },
+    {
+      "id": "S037",
+      "title": "2020 Berkshire Hathaway annual meeting",
+      "year": 2020,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/2020-berkshire-hathaway-annual-meeting/",
+      "scope": "crisis communication, long optimism, uncertainty"
+    },
+    {
+      "id": "S038",
+      "title": "2020 annual meeting — Part 1",
+      "year": 2020,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/2020/05/20/berkshire-hathaway-annual-meeting-2020---part-1.html",
+      "scope": "historical context, airline mistake, measured confidence"
+    },
+    {
+      "id": "S039",
+      "title": "2020 annual meeting — Q&A",
+      "year": 2020,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/video/2020/05/04/berkshire-hathaway-annual-meeting-qa---may-02-2020.html",
+      "scope": "explicit responsibility, changed world, option value"
+    },
+    {
+      "id": "S040",
+      "title": "Warren Buffett Archive",
+      "year": 2026,
+      "kind": "primary",
+      "url": "https://buffett.cnbc.com/",
+      "scope": "searchable archive of full meetings, interviews, and clips"
+    },
+    {
+      "id": "S041",
+      "title": "About Warren Buffett Archive",
+      "year": 2018,
+      "kind": "secondary",
+      "url": "https://buffett.cnbc.com/about-buffett/",
+      "scope": "approachability, common sense, modesty, public teaching"
+    },
+    {
+      "id": "S042",
+      "title": "Wit, wisdom and funny jokes",
+      "year": 2018,
+      "kind": "secondary",
+      "url": "https://buffett.cnbc.com/2018/04/20/wit-wisdom-and-funny-jokes.html",
+      "scope": "humor patterns across public appearances"
+    },
+    {
+      "id": "S043",
+      "title": "Friendship is more important than money",
+      "year": 2018,
+      "kind": "secondary",
+      "url": "https://buffett.cnbc.com/2018/05/02/friendship-is-more-important-than-money.html",
+      "scope": "friendship and life priorities"
+    },
+    {
+      "id": "S044",
+      "title": "Bill Gates essay on friendship with Warren Buffett",
+      "year": 2016,
+      "kind": "external-observation",
+      "url": "https://time.com/4396513/read-bill-gates-touching-essay-about-his-best-friend-forever-warren-buffett/",
+      "scope": "thoughtfulness, kindness, humor, attention over decades"
+    },
+    {
+      "id": "S045",
+      "title": "AP report on Buffett's final annual meeting as CEO",
+      "year": 2025,
+      "kind": "external-observation",
+      "url": "https://apnews.com/article/f0799a04e40a7eaf81c9fd5dac0aa95e",
+      "scope": "folksy wisdom, jokes, shareholder relationship"
+    },
+    {
+      "id": "S046",
+      "title": "AP report on Buffett's wit and self-effacing humor",
+      "year": 2024,
+      "kind": "external-observation",
+      "url": "https://apnews.com/article/06cac677fd2a9e36bcc70eb24bdc223b",
+      "scope": "self-effacing public communication and meeting appeal"
+    }
+  ]
+}

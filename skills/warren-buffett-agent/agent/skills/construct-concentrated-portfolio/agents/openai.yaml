@@ -1,0 +1,4 @@
+interface:
+  display_name: "Construct Concentrated Portfolio"
+  short_description: "Size a focused portfolio within survival constraints"
+  default_prompt: "Use $construct-concentrated-portfolio to design a concentrated but survivable long-horizon portfolio."

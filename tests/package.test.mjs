@@ -1,8 +1,11 @@
 import assert from 'node:assert/strict';
-import { access, readFile, stat } from 'node:fs/promises';
+import { access, readFile, readdir, stat } from 'node:fs/promises';
 import test from 'node:test';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const root = new URL('../', import.meta.url);
+const rootPath = fileURLToPath(root);
 const diagramPaths = [
   'assets/diagrams/01-method-lens.svg',
   'assets/diagrams/02-evidence-chain.svg',
@@ -13,12 +16,37 @@ const diagramPaths = [
 ];
 
 test('publishes a real installable Agent entrypoint', async () => {
-  const skill = await readFile(new URL('SKILL.md', root), 'utf8');
+  const skill = await readFile(new URL('skills/warren-buffett-agent/SKILL.md', root), 'utf8');
   assert.match(skill, /^name:\s*warren-buffett-agent$/m);
   assert.match(skill, /agent\/RUNTIME\.md/);
   assert.match(skill, /relational/);
   assert.match(skill, /high-stakes/);
   assert.match(skill, /one to three routed Skills/);
+});
+
+async function listFiles(directory, relativeDirectory = '') {
+  const entries = await readdir(path.join(directory, relativeDirectory), { withFileTypes: true });
+  const files = [];
+  for (const entry of entries.sort((left, right) => left.name.localeCompare(right.name))) {
+    const relativePath = path.join(relativeDirectory, entry.name);
+    if (entry.isDirectory()) files.push(...await listFiles(directory, relativePath));
+    else if (entry.isFile()) files.push(relativePath.split(path.sep).join('/'));
+  }
+  return files;
+}
+
+test('ships a byte-equivalent full-Agent install distribution', async () => {
+  const canonicalRoot = path.join(rootPath, 'agent');
+  const distributionRoot = path.join(rootPath, 'skills', 'warren-buffett-agent', 'agent');
+  const canonicalFiles = await listFiles(canonicalRoot);
+  assert.deepEqual(await listFiles(distributionRoot), canonicalFiles);
+  for (const relativePath of canonicalFiles) {
+    const canonical = await readFile(path.join(canonicalRoot, relativePath));
+    const distribution = await readFile(path.join(distributionRoot, relativePath));
+    assert.equal(distribution.equals(canonical), true, `distribution drift: ${relativePath}`);
+  }
+  await access(path.join(distributionRoot, 'RUNTIME.md'));
+  await access(path.join(distributionRoot, 'AGENT.md'));
 });
 
 test('packages the complete twelve-Skill candidate', async () => {
@@ -45,10 +73,19 @@ test('README delivers the launch story and the unified Archive Plate media', asy
     assert.match(source, /https:\/\/github\.com\/MrMaii\/Hall-of-Fame-Studio/);
     const images = [...source.matchAll(/<img src="([^"]+)"/g)].map((match) => match[1]);
     const diagrams = images.filter((image) => image.includes('./assets/diagrams/'));
+    assert.equal(images.filter((image) => image === './assets/install.gif').length, 1, label + ' README must show the install motion once');
     assert.equal(images.filter((image) => image === './assets/hero.png').length, 1, label + ' README must show the primary plate once');
     assert.equal(images.filter((image) => /poster|social-card|demo|teaser/.test(image)).length, 0, label + ' README must not repeat plate variants');
     assert.equal(new Set(images).size, images.length, label + ' README must not repeat a visual element');
     assert.deepEqual([...diagrams].sort(), diagramPaths.map((path) => './' + path).sort(), label + ' README must contain the shared six diagrams');
+    const pasteHeading = label === 'English' ? '## Paste into your Agent' : '## 粘贴到你的 Agent';
+    const analysisHeading = label === 'English' ? '## What this Agent is' : '## 这是什么';
+    assert.ok(source.indexOf('./assets/install.gif') < source.indexOf(pasteHeading), label + ' install motion must precede the paste instruction');
+    assert.ok(source.indexOf(pasteHeading) < source.indexOf(analysisHeading), label + ' user path must precede professional analysis');
+    assert.match(source, /Install MrMaii\/Warren-Buffett-Agent as a user-level Agent Skill for this agent\./);
+    assert.match(source, /gh skill preview MrMaii\/Warren-Buffett-Agent warren-buffett-agent/);
+    assert.match(source, /gh skill install MrMaii\/Warren-Buffett-Agent warren-buffett-agent/);
+    assert.doesNotMatch(source, /Install it as a Codex Skill|安装为 Codex Skill/);
     for (const diagram of diagrams) {
       await readFile(new URL(diagram.replace(/^\.\//, ''), root), 'utf8');
     }
@@ -67,6 +104,7 @@ test('README delivers the launch story and the unified Archive Plate media', asy
     'assets/social-card.png',
     'assets/demo.gif',
     'assets/teaser.gif',
+    'assets/install.gif',
     'assets/README.md',
     ...diagramPaths,
   ];
@@ -84,6 +122,22 @@ test('README delivers the launch story and the unified Archive Plate media', asy
   }
 });
 
+test('publishes a deterministic looping universal-Agent install motion', async () => {
+  const config = JSON.parse(await readFile(new URL('assets/install-motion.json', root), 'utf8'));
+  assert.equal(config.repository, 'MrMaii/Warren-Buffett-Agent');
+  assert.equal(config.skill_name, 'warren-buffett-agent');
+  assert.equal(config.output, 'assets/install.gif');
+  const builder = await readFile(new URL('scripts/build-install-gif.py', root), 'utf8');
+  assert.match(builder, /Agent Skills compatible/);
+  assert.match(builder, /PASTE INTO YOUR AGENT/);
+  const gif = await readFile(new URL('assets/install.gif', root));
+  assert.equal(gif.subarray(0, 6).toString('ascii'), 'GIF89a');
+  assert.equal(gif.readUInt16LE(6), 960);
+  assert.equal(gif.readUInt16LE(8), 640);
+  assert.ok(gif.includes(Buffer.from('NETSCAPE2.0')), 'GIF must contain the infinite-loop extension');
+  assert.ok(gif.length > 100_000, 'install motion must be a real animation');
+});
+
 test('states product, status, financial, and identity boundaries', async () => {
   const readme = await readFile(new URL('README.md', root), 'utf8');
   const notice = await readFile(new URL('NOTICE.md', root), 'utf8');
@@ -98,7 +152,7 @@ test('uses the canonical Hall of Fame Studio name everywhere in release text', a
   const files = [
     'README.md',
     'README.zh-CN.md',
-    'SKILL.md',
+    'skills/warren-buffett-agent/SKILL.md',
     'docs/QUALIFICATION.md',
     'docs/HALL-OF-FAME-STUDIO.md',
     'assets/README.md',
@@ -113,7 +167,7 @@ test('uses the canonical Hall of Fame Studio name everywhere in release text', a
 
 test('contains no stale Steve Jobs packaging copy', async () => {
   const surfaces = [
-    await readFile(new URL('SKILL.md', root), 'utf8'),
+    await readFile(new URL('skills/warren-buffett-agent/SKILL.md', root), 'utf8'),
     await readFile(new URL('package.json', root), 'utf8'),
     await readFile(new URL('NOTICE.md', root), 'utf8'),
   ].join('\n');

@@ -1,6 +1,6 @@
 {
   "name": "warren-buffett-agent",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "An evidence-grounded Warren Buffett deep Agent for business quality, capital allocation, downside discipline, and owner communication — part of Hall of Fame Studio.",
   "type": "module",
   "private": false,
@@ -26,10 +26,12 @@
     "node": ">=20"
   },
   "scripts": {
+    "bundle:build": "node scripts/build-install-bundle.mjs",
     "validate": "node scripts/validate-package.mjs",
     "fingerprint": "node scripts/fingerprint.mjs",
     "check:response": "node scripts/check-response.mjs",
-    "media:build": "python scripts/build-media.py",
+    "install:media:build": "python scripts/build-install-gif.py",
+    "media:build": "python scripts/build-media.py && npm run install:media:build",
     "diagrams:build": "python scripts/build-diagrams.py",
     "test": "node --test agent/tests/qualityGate.test.mjs tests/package.test.mjs"
   }

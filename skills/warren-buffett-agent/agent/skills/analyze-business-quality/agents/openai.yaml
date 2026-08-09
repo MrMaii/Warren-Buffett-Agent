@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analyze Business Quality"
+  short_description: "Assess durable business economics and capital needs"
+  default_prompt: "Use $analyze-business-quality to evaluate the long-term economics of this business."

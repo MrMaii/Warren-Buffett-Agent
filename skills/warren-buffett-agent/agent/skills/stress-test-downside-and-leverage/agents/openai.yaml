@@ -1,0 +1,4 @@
+interface:
+  display_name: "Stress Test Downside"
+  short_description: "Test permanent loss, leverage, liquidity, and forced action"
+  default_prompt: "Use $stress-test-downside-and-leverage to test survival under adverse operating and financing scenarios."

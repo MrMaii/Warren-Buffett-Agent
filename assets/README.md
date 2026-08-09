@@ -1,6 +1,11 @@
 # Archive Plate and frosted-glass visual system
 
-This release has one reviewed **Archive Plate**. The supplied 1536×1024
+This release has a user-facing **Editorial Prompt** installation motion and one
+reviewed **Archive Plate**. The install motion teaches the universal Agent Skill
+path; the Archive Plate carries the Agent identity. They are separate surfaces
+and each appears once in the README.
+
+The supplied 1536×1024
 artwork is the source of truth: its charcoal stone field, warm bronze editorial
 type, right-side portrait window, archival grain, calibration marks, coordinates,
 date, and identity labels are already composed into the finished image.
@@ -10,6 +15,8 @@ distribution slots, not additional editorial content.
 
 | Asset | Role | Format | Constraint |
 |---|---|---|---|
+| <code>install-motion.json</code> | Agent-specific install copy | UTF-8 JSON | Copy only; no animation logic |
+| <code>install.gif</code> | README quick-install tutorial | 960×640 looping GIF | Complete first frame; generic Agent language |
 | <code>source/hero-master.png</code> | Compatibility source slot | Exact supplied 3:2 plate | Byte-identical to <code>source/poster-master.png</code> |
 | <code>source/poster-master.png</code> | Compatibility source slot | Exact supplied 3:2 plate | Byte-identical to <code>source/hero-master.png</code> |
 | <code>hero.png</code> | README primary visual | Exact 1536×1024 plate | No crop, redraw, or overlay |
@@ -47,13 +54,19 @@ The visual grammar is deliberately quiet and archival:
 
 ## Provenance and rebuilding
 
+`scripts/build-install-gif.py` is the shared Hall of Fame Studio renderer. It
+reads `install-motion.json` and builds the warm-paper, serif, monospace-prompt,
+bronze-hairline host carousel without portraiture or simulated Agent output.
+Only the Agent name, two-line headline, promise, repository, and Skill name vary.
+
 The master was supplied as a finished external design and reviewed locally.
 Typography and composition are locked inside the source plate. The media
 builder copies the master unchanged to the three static PNG surfaces and creates
 only restrained motion studies. The diagram builder deterministically creates
 the six shared SVG roles from this Agent's profile.
 
-<pre><code>npm run media:build
+<pre><code>npm run install:media:build
+npm run media:build
 npm run diagrams:build</code></pre>
 
 The artwork is an independent interpretive campaign asset. It is not an

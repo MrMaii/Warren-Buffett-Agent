@@ -4,13 +4,13 @@ The repository separates the candidate Agent from its public release surface.
 
 ```text
 public entrypoint
-  SKILL.md
+  skills/warren-buffett-agent/SKILL.md
       ↓
 compact runtime
-  agent/RUNTIME.md
+  skills/warren-buffett-agent/agent/RUNTIME.md
       ↓
 routing manifest
-  agent/agent.json ──→ agent/skills/*/SKILL.md
+  skills/warren-buffett-agent/agent/agent.json ──→ agent/skills/*/SKILL.md
       ↓
 deep integration
   agent/AGENT.md + behavior/* + research/*
@@ -32,6 +32,10 @@ response governance
 The Agent definition has no API keys, remote calls, broker connection, or trade
 executor. Current financial facts belong to the host's evidence layer. External
 writes and transactions require separate explicit authority.
+
+`agent/` remains the canonical standalone package. `npm run bundle:build`
+generates the install mirror under `skills/warren-buffett-agent/agent/`, and
+validation requires the two trees to have identical files and SHA-256 values.
 
 ## Fingerprint boundary
 
